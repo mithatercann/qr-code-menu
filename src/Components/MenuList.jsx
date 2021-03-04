@@ -21,7 +21,6 @@ const MenuList = React.memo(({ menuList, addToCart, title }) => {
             openInfo();
           }}
           className="menu__list--item"
-          key={uuid()}
         >
           <span className="menu__list--detail">
             <div className="menu__list--top">

@@ -93,7 +93,7 @@ header {
   height: 100px;
   width: 140px;
   border-radius: 25px;
-  object-fit: contain;
+  object-fit: cover;
 }
 .selected {
   color: #5cb6f8;
@@ -185,8 +185,8 @@ header {
   flex: 1;
   min-width: 70px;
   height: 70px;
-  border-radius: 10px;
-  object-fit: contain;
+  border-radius: 20px;
+  object-fit: cover;
 }
 .menu__list--name {
   font-size: 18px;
