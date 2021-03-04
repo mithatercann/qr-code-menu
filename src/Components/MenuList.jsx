@@ -3,7 +3,7 @@ import { AiOutlineFieldTime } from "react-icons/ai";
 import { v4 as uuid } from "uuid";
 import Image from "./Image";
 import getSymbolFromCurrency from "currency-symbol-map";
-const MenuList = React.memo(({ menuList, addToCart, title }) => {
+const MenuList = ({ menuList, addToCart, title }) => {
   const [state, setState] = useState("closedOne");
   const openInfo = () => {
     if (state == "closedOne") {
@@ -51,6 +51,6 @@ const MenuList = React.memo(({ menuList, addToCart, title }) => {
       ))}
     </section>
   );
-});
+};
 
 export default MenuList;
