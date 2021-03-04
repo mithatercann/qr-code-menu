@@ -20,7 +20,6 @@ const MenuTitle = React.memo(
       <section className="menu__titles">
         {titles.map((item) => (
           <div
-            key={uuid()}
             className="menu__title"
             // onClick={(e) => selectTarget(item)}
           >
