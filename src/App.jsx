@@ -10,6 +10,8 @@ function App() {
   const [currency, setCurrency] = useState("");
   const [menuList, setMenuList] = useState([]);
   const [cart, setCart] = useState([]);
+  const [info, setInfo] = useState([]);
+  const [isInfoOpened, setIsInfoOpened] = useState(false);
   const API = `./database${location.pathname}/db.json`;
 
   const restaurantName = location.pathname
@@ -18,7 +20,6 @@ function App() {
     .join("")
     .toUpperCase();
 
-  console.log("name =" + restaurantName);
   const callMenuList = (titleProp) => {
     setTitle(titleProp);
     const filterMenuList = data.filter((title) => title.TYPE == titleProp);
@@ -26,7 +27,13 @@ function App() {
   };
 
   const addToCart = (data) => {
+    setIsInfoOpened(true);
+    setInfo([data]);
     setCart([...cart, data]);
+  };
+
+  const closeInfo = () => {
+    setIsInfoOpened(false);
   };
 
   const removeFromCart = (itemId) => {
@@ -81,6 +88,9 @@ function App() {
       currency={currency}
       location={location.pathname}
       restaurantName={restaurantName}
+      info={info}
+      isInfoOpened={isInfoOpened}
+      closeInfo={() => closeInfo()}
     />
   );
 }

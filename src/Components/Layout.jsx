@@ -3,6 +3,7 @@ import Header from "./Header";
 import MenuTitle from "./MenuTitle";
 import MenuList from "./MenuList";
 import Cart from "./Cart";
+import MoreInfo from "./MoreInfo";
 import Footer from "./Footer";
 
 const Layout = ({
@@ -16,6 +17,9 @@ const Layout = ({
   currency,
   location,
   restaurantName,
+  info,
+  isInfoOpened,
+  closeInfo,
 }) => {
   const [isCartOpened, setIsCartOpened] = useState("closed");
 
@@ -56,6 +60,12 @@ const Layout = ({
         closeCart={() => closeCart()}
         location={location}
         restaurantName={restaurantName}
+      />
+      <MoreInfo
+        closeInfo={() => closeInfo()}
+        isInfoOpened={isInfoOpened}
+        data={info}
+        location={location}
       />
       <Footer />
     </div>

@@ -100,10 +100,10 @@
   }
 
   &__footer {
-    position: sticky;
+    position: fixed;
     background-color: white;
     bottom: 0;
-    width: 95%;
+    width: 100%;
     padding: 24px 15px;
     border-top: 1px dashed rgb(212, 212, 212);
     margin: auto;

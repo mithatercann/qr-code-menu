@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import { v4 as uuid } from "uuid";
 import App from "./App";
 
 const Routers = () => {
@@ -22,7 +23,7 @@ const Routers = () => {
   return (
     <Router>
       {customers.map((customer) => (
-        <Route path={`/${customer.name}`}>
+        <Route key={uuid()} path={`/${customer.name}`}>
           <App />
         </Route>
       ))}
