@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { AiOutlineFieldTime } from "react-icons/ai";
 
 import getSymbolFromCurrency from "currency-symbol-map";
-const MenuList = ({ menuList, addToCart, title }) => {
+const MenuList = ({ menuList, addToCart, title, location }) => {
   const [state, setState] = useState("closedOne");
   const openInfo = () => {
     if (state == "closedOne") {
@@ -34,7 +34,7 @@ const MenuList = ({ menuList, addToCart, title }) => {
               </div>
               <img
                 className={"menu__list--img"}
-                src={`/images/${item.TYPE.split(" ").join("_")}.jpg`}
+                src={`/images${location}/${item.TYPE.split(" ").join("_")}.jpg`}
                 alt={"image"}
               />
             </div>

@@ -1,16 +1,24 @@
-import React, { useState, useEffect, useLayoutEffect } from "react";
-
+import React, { useState, useEffect } from "react";
 import Layout from "./Components/Layout";
+import { BrowserRouter as Router, useLocation, Route } from "react-router-dom";
 
 function App() {
+  const location = useLocation();
   const [data, setData] = useState([]);
   const [menuTitle, setMenuTitle] = useState([]);
   const [title, setTitle] = useState("");
   const [currency, setCurrency] = useState("");
   const [menuList, setMenuList] = useState([]);
   const [cart, setCart] = useState([]);
-  const API = "./db.json";
+  const API = `./database${location.pathname}/db.json`;
 
+  const restaurantName = location.pathname
+    .split("")
+    .splice(1, location.pathname.length)
+    .join("")
+    .toUpperCase();
+
+  console.log("name =" + restaurantName);
   const callMenuList = (titleProp) => {
     setTitle(titleProp);
     const filterMenuList = data.filter((title) => title.TYPE == titleProp);
@@ -71,6 +79,8 @@ function App() {
       cartData={cart}
       title={title}
       currency={currency}
+      location={location.pathname}
+      restaurantName={restaurantName}
     />
   );
 }

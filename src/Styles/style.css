@@ -234,11 +234,13 @@ body {
 }
 
 .menu__title--img {
-  height: 92px;
-  width: 130px;
-  border-radius: 15px;
+  height: 100px;
+  width: 160px;
+  border-radius: 10px;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-box-shadow: 0 0 15px 1px rgba(78, 78, 78, 0.055);
+          box-shadow: 0 0 15px 1px rgba(78, 78, 78, 0.055);
 }
 
 .cart {

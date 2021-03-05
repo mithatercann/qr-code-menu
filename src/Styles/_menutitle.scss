@@ -20,8 +20,9 @@
   margin: 0 15px;
 }
 .menu__title--img {
-  height: 92px;
-  width: 130px;
-  border-radius: 15px;
+  height: 100px;
+  width: 160px;
+  border-radius: 10px;
   object-fit: cover;
+  box-shadow: 0 0 15px 1px rgba(78, 78, 78, 0.055);
 }

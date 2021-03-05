@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const MenuTitle = ({ menuTitles, callMenuList }) => {
+const MenuTitle = ({ menuTitles, callMenuList, location }) => {
   const [titles, setTitles] = useState([]);
 
   useEffect(() => {
@@ -16,7 +16,7 @@ const MenuTitle = ({ menuTitles, callMenuList }) => {
           <img
             onClick={(e) => callMenuList(item)}
             className="menu__title--img"
-            src={`/images/${item.split(" ").join("_")}.jpg`}
+            src={`/images${location}/${item.split(" ").join("_")}.jpg`}
             alt="Title"
           />
           <small>{item}</small>

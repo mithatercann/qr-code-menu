@@ -2,7 +2,15 @@ import React, { useEffect, useState } from "react";
 import { IoCloseOutline } from "react-icons/io5";
 import getSymbolFromCurrency from "currency-symbol-map";
 
-function Cart({ currency, cartData, removeFromCart, isCartOpened, closeCart }) {
+function Cart({
+  currency,
+  cartData,
+  removeFromCart,
+  isCartOpened,
+  closeCart,
+  location,
+  restaurantName,
+}) {
   const [total, setTotal] = useState(0);
   const [cart, setCart] = useState([]);
 
@@ -20,7 +28,7 @@ function Cart({ currency, cartData, removeFromCart, isCartOpened, closeCart }) {
   return (
     <div className={`cart ${isCartOpened}`}>
       <nav>
-        <span>PECA</span>
+        <span>{restaurantName}</span>
         <IoCloseOutline
           className="close"
           size={30}
@@ -50,7 +58,9 @@ function Cart({ currency, cartData, removeFromCart, isCartOpened, closeCart }) {
                 </div>
                 <img
                   className="cart__item--img"
-                  src={`/images/${item.TYPE.split(" ").join("_")}.jpg`}
+                  src={`/images${location}/${item.TYPE.split(" ").join(
+                    "_"
+                  )}.jpg`}
                   alt={"image"}
                 />
               </div>

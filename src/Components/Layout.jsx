@@ -4,6 +4,7 @@ import MenuTitle from "./MenuTitle";
 import MenuList from "./MenuList";
 import Cart from "./Cart";
 import Footer from "./Footer";
+
 const Layout = ({
   cartData,
   menuList,
@@ -13,6 +14,8 @@ const Layout = ({
   title,
   removeFromCart,
   currency,
+  location,
+  restaurantName,
 }) => {
   const [isCartOpened, setIsCartOpened] = useState("closed");
 
@@ -29,15 +32,21 @@ const Layout = ({
 
   return (
     <div>
-      <Header openCart={() => openCart()} cartData={cartData} />
+      <Header
+        openCart={() => openCart()}
+        cartData={cartData}
+        restaurantName={restaurantName}
+      />
       <MenuTitle
         menuTitles={menuTitles}
         callMenuList={(titleProp) => callMenuList(titleProp)}
+        location={location}
       />
       <MenuList
         title={title}
         menuList={menuList}
         addToCart={(data) => addToCart(data)}
+        location={location}
       />
       <Cart
         currency={currency}
@@ -45,6 +54,8 @@ const Layout = ({
         removeFromCart={(itemId) => removeFromCart(itemId)}
         isCartOpened={isCartOpened}
         closeCart={() => closeCart()}
+        location={location}
+        restaurantName={restaurantName}
       />
       <Footer />
     </div>

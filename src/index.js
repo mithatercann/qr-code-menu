@@ -1,9 +1,9 @@
 import React from "react";
 import { render } from "react-dom";
-import App from "./App";
+import Routers from "./Routers";
 import "./Styles/style.css";
 function Index() {
-  return <App />;
+  return <Routers />;
 }
 
-render(<App />, document.getElementById("root"));
+render(<Routers />, document.getElementById("root"));
