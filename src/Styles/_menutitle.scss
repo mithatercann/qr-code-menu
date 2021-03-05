@@ -1,0 +1,27 @@
+.menu__titles {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+}
+.menu__titles small {
+  margin-top: 8px;
+  white-space: nowrap;
+}
+
+.menu__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgb(58, 58, 58);
+  text-align: center;
+
+  margin: 0 15px;
+}
+.menu__title--img {
+  height: 92px;
+  width: 130px;
+  border-radius: 15px;
+  object-fit: cover;
+}

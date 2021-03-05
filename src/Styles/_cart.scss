@@ -1,0 +1,129 @@
+.cart {
+  position: fixed;
+  z-index: 10;
+  overflow-y: scroll;
+  width: 100vw;
+  height: 100vh;
+  right: 0;
+  top: 0;
+  transform: translateX(100%);
+  background-color: white;
+  color: white;
+  transition: 0.3s;
+
+  nav {
+    font-family: abeja;
+    position: sticky;
+    top: 0;
+    padding: 15px;
+    display: flex;
+    background-color: #fff;
+    color: gray;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 1px 13px 0 rgb(230, 230, 230);
+  }
+  &__container {
+    min-height: 68%;
+    width: 95%;
+    margin: 0 auto;
+  }
+  &__info {
+    width: 100%;
+    height: 66vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: rgb(179, 179, 179);
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &__item {
+    color: #252525;
+    border-bottom: 1px solid rgb(236, 236, 236);
+    width: 100%;
+    margin: 11px 0;
+    padding: 18px 10px;
+    &:nth-last-child(1) {
+      border: none;
+    }
+
+    &--top {
+      display: flex;
+      align-items: center;
+    }
+    &--details {
+      span {
+        font-size: 15px;
+        font-weight: 500;
+      }
+      p {
+        font-size: 14px;
+        color: rgb(107, 107, 107);
+        margin: 10px 0;
+      }
+    }
+    &--img {
+      min-width: 110px;
+      height: 85px;
+      border-radius: 15px;
+      object-fit: cover;
+    }
+
+    &--bottom {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+    }
+    &--price {
+      color: #4fa2dd;
+    }
+    &--btns {
+      display: flex;
+      span {
+        font-size: 13px;
+        color: gray;
+      }
+      button {
+        background-color: #62a0cc;
+        color: #fff;
+        border-radius: 5px;
+        outline: none;
+        border: none;
+        padding: 4px 11px;
+        margin: 0px 10px;
+      }
+    }
+  }
+
+  &__footer {
+    position: sticky;
+    background-color: white;
+    bottom: 0;
+    width: 95%;
+    padding: 24px 15px;
+    border-top: 1px dashed rgb(212, 212, 212);
+    margin: auto;
+    &--container {
+      font-size: 14px;
+      color: rgb(73, 73, 73);
+      width: 97%;
+    }
+    &--item {
+      display: flex;
+      justify-content: space-between;
+      margin: 6px 0;
+    }
+
+    &--total {
+      font-weight: 700;
+    }
+  }
+}
+
+.opened {
+  transform: translateX(0);
+}

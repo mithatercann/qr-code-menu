@@ -1,0 +1,41 @@
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  box-shadow: 0 1px 13px 0 rgb(230, 230, 230);
+  &__logo {
+    font-family: abeja;
+    color: rgb(107, 107, 107);
+    z-index: 200;
+  }
+  &__cart {
+    display: flex;
+    align-items: center;
+    svg {
+      color: rgb(158, 158, 158);
+      margin: 0 9px;
+    }
+    i {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      right: 9px;
+      top: 5px;
+      background-color: #5cb6f8;
+      color: white;
+      width: 15px;
+      height: 15px;
+      font-size: 11px;
+      border-radius: 50%;
+    }
+  }
+}

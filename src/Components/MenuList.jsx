@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { AiOutlineFieldTime } from "react-icons/ai";
-import { v4 as uuid } from "uuid";
-import Image from "./Image";
+
 import getSymbolFromCurrency from "currency-symbol-map";
 const MenuList = ({ menuList, addToCart, title }) => {
   const [state, setState] = useState("closedOne");
@@ -14,6 +13,8 @@ const MenuList = ({ menuList, addToCart, title }) => {
   };
   return (
     <section className="menu__list">
+      <span className="menu__list--title">{title}</span>
+
       {menuList.map((item) => (
         <div
           onClick={(e) => {
@@ -31,7 +32,7 @@ const MenuList = ({ menuList, addToCart, title }) => {
                   on...
                 </div>
               </div>
-              <Image
+              <img
                 className={"menu__list--img"}
                 src={`/images/${item.TYPE.split(" ").join("_")}.jpg`}
                 alt={"image"}
