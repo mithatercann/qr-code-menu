@@ -76,12 +76,11 @@
 .info {
   z-index: 11;
   position: fixed;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   color: rgb(0, 0, 0);
-
   transition: 0.2s;
 
   &__filter {
