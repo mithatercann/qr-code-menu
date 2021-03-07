@@ -2,15 +2,7 @@ import React, { useEffect, useState } from "react";
 import { AiOutlineFieldTime } from "react-icons/ai";
 
 import getSymbolFromCurrency from "currency-symbol-map";
-const MenuList = ({ menuList, addToCart, title, location }) => {
-  const [state, setState] = useState("closedOne");
-  const openInfo = () => {
-    if (state == "closedOne") {
-      setState("openedOne");
-    } else {
-      setState("closedOne");
-    }
-  };
+const MenuList = ({ menuList, title, location, openInfo }) => {
   return (
     <section className="menu__list">
       <span className="menu__list--title">{title}</span>
@@ -18,8 +10,7 @@ const MenuList = ({ menuList, addToCart, title, location }) => {
       {menuList.map((item) => (
         <div
           onClick={(e) => {
-            addToCart(item);
-            openInfo();
+            openInfo(item);
           }}
           className="menu__list--item"
         >
@@ -28,8 +19,7 @@ const MenuList = ({ menuList, addToCart, title, location }) => {
               <div className="menu__list--top--left">
                 <span className="menu__list--name"> {item.NAME}</span>
                 <div className="menu__list--desc">
-                  Here is for product's description that i will complete later
-                  on...
+                  {item.DESCRIPTION.split("").splice(0, 60).join("")}...
                 </div>
               </div>
               <img

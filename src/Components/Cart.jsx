@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { IoCloseOutline } from "react-icons/io5";
 import getSymbolFromCurrency from "currency-symbol-map";
-
+import SwipeToDelete from "react-swipe-to-delete-component";
 function Cart({
   currency,
   cartData,
@@ -49,13 +49,6 @@ function Cart({
           cart.map((item) => (
             <div className="cart__item">
               <div className="cart__item--top">
-                <div className="cart__item--details">
-                  <span>{item.NAME}</span>
-                  <p>
-                    Here is for product's description that i will complete later
-                    on...
-                  </p>
-                </div>
                 <img
                   className="cart__item--img"
                   src={`/images${location}/${item.TYPE.split(" ").join(
@@ -63,26 +56,18 @@ function Cart({
                   )}.jpg`}
                   alt={"image"}
                 />
-              </div>
-              <div className="cart__item--bottom">
-                <div className="cart__item--price">
-                  {getSymbolFromCurrency(item.CURRENCY)} {item.PRICE}
-                </div>
-                <div className="cart__item--btns">
-                  <button className="cart__item--increase">+</button>
-                  <span>0</span>
-                  <button
-                    className="cart__item--decrease"
-                    onClick={() => removeFromCart(item.CODE)}
-                  >
-                    -
-                  </button>
+                <div className="cart__item--details">
+                  <span>{item.NAME}</span>
+                  <p>
+                    Here is for product's description that i will complete later
+                    on...
+                  </p>
+                  <div className="cart__item--price">
+                    {getSymbolFromCurrency(item.CURRENCY)} {item.PRICE}{" "}
+                    <span>x 3</span>
+                  </div>
                 </div>
               </div>
-              {/* <MdDeleteForever
-      size={22}
-      
-    /> */}
             </div>
           ))
         )}

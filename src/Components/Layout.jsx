@@ -20,6 +20,7 @@ const Layout = ({
   info,
   isInfoOpened,
   closeInfo,
+  openInfo,
 }) => {
   const [isCartOpened, setIsCartOpened] = useState("closed");
 
@@ -49,8 +50,8 @@ const Layout = ({
       <MenuList
         title={title}
         menuList={menuList}
-        addToCart={(data) => addToCart(data)}
         location={location}
+        openInfo={(item) => openInfo(item)}
       />
       <Cart
         currency={currency}
@@ -66,6 +67,7 @@ const Layout = ({
         isInfoOpened={isInfoOpened}
         data={info}
         location={location}
+        addToCart={(item) => addToCart(item)}
       />
       <Footer />
     </div>

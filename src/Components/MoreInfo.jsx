@@ -1,8 +1,13 @@
 import React from "react";
 import getSymbolFromCurrency from "currency-symbol-map";
 import { AiOutlineFieldTime } from "react-icons/ai";
-function MoreInfo({ data, isInfoOpened, closeInfo, location }) {
-  console.log("info : " + isInfoOpened);
+import { SlideDown } from "react-slidedown";
+import "react-slidedown/lib/slidedown.css";
+function MoreInfo({ data, isInfoOpened, closeInfo, location, addToCart }) {
+  const handleMouseMove = (e) => {
+    console.log(e.clientY + "container =" + e.target);
+  };
+
   return (
     <div className={`info ${isInfoOpened ? "info__opened" : "info__closed"}`}>
       <div onClick={() => closeInfo()} className="info__filter"></div>
@@ -10,22 +15,19 @@ function MoreInfo({ data, isInfoOpened, closeInfo, location }) {
         <div className="info__wrapper">
           {data.map((item) => (
             <div>
+              <div
+                style={{
+                  backgroundImage: `url('/images${location}/${item.TYPE.split(
+                    " "
+                  ).join("_")}.jpg')`,
+                }}
+                className="info__img"
+              ></div>
               <div className="info__top">
                 <div className="info__details">
                   <span>{item.NAME}</span>
-                  <p>
-                    sHere is for product's description that i will complete
-                    later on...
-                  </p>
+                  <p>{item.DESCRIPTION}</p>
                 </div>
-
-                <img
-                  className={"info__img"}
-                  src={`/images${location}/${item.TYPE.split(" ").join(
-                    "_"
-                  )}.jpg`}
-                  alt={"image"}
-                />
               </div>
 
               <div className="info__bottom">
@@ -33,16 +35,21 @@ function MoreInfo({ data, isInfoOpened, closeInfo, location }) {
                   {getSymbolFromCurrency(item.CURRENCY)} {item.PRICE}
                 </div>
                 <div className="info__duration">
-                  <AiOutlineFieldTime size={20} />
-                  15-30 min
+                  <div className="info--btns">
+                    <button className="info--decrease">-</button>
+                    <span>0</span>
+                    <button className="info--increase">+</button>
+                  </div>
                 </div>
               </div>
 
               <footer className="info__footer">
-                <button className="info__btn info__btn--add">
+                <button
+                  onClick={() => addToCart(item)}
+                  className="info__btn info__btn--add"
+                >
                   Add to cart
                 </button>
-                <a className="info__btn info__btn--call">Call restaurant</a>
               </footer>
             </div>
           ))}

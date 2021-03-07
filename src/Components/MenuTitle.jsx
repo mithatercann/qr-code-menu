@@ -13,12 +13,15 @@ const MenuTitle = ({ menuTitles, callMenuList, location }) => {
     <section className="menu__titles">
       {titles.map((item) => (
         <div className="menu__title">
-          <img
+          <div
             onClick={(e) => callMenuList(item)}
+            style={{
+              backgroundImage: `url("/images${location}/${item
+                .split(" ")
+                .join("_")}.jpg")`,
+            }}
             className="menu__title--img"
-            src={`/images${location}/${item.split(" ").join("_")}.jpg`}
-            alt="Title"
-          />
+          ></div>
           <small>{item}</small>
         </div>
       ))}

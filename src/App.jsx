@@ -27,15 +27,18 @@ function App() {
   };
 
   const addToCart = (data) => {
-    setIsInfoOpened(true);
-    setInfo([data]);
     setCart([...cart, data]);
   };
 
   const closeInfo = () => {
     setIsInfoOpened(false);
+    document.documentElement.style.overflowY = "scroll";
   };
-
+  const openInfo = (item) => {
+    setInfo([item]);
+    setIsInfoOpened(true);
+    document.documentElement.style.overflowY = "hidden";
+  };
   const removeFromCart = (itemId) => {
     const cartItems = cart;
 
@@ -91,6 +94,7 @@ function App() {
       info={info}
       isInfoOpened={isInfoOpened}
       closeInfo={() => closeInfo()}
+      openInfo={(item) => openInfo(item)}
     />
   );
 }
