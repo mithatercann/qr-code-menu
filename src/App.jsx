@@ -26,7 +26,8 @@ function App() {
     setMenuList(filterMenuList);
   };
 
-  const addToCart = (data) => {
+  const addToCart = (data, quantity) => {
+    data.QUANTITY = quantity;
     setCart([...cart, data]);
   };
 
@@ -84,7 +85,7 @@ function App() {
       menuList={menuList}
       data={data}
       callMenuList={(titleProp) => callMenuList(titleProp)}
-      addToCart={(data) => addToCart(data)}
+      addToCart={(data, quantity) => addToCart(data, quantity)}
       removeFromCart={(itemId) => removeFromCart(itemId)}
       cartData={cart}
       title={title}

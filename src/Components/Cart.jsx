@@ -15,7 +15,10 @@ function Cart({
   const [cart, setCart] = useState([]);
 
   useEffect(() => {
-    const total = cartData.reduce((acc, item) => parseInt(item.PRICE) + acc, 0);
+    const total = cartData.reduce(
+      (acc, item) => parseInt(item.PRICE * item.QUANTITY) + acc,
+      0
+    );
     setTotal(total);
 
     const filtered = cartData.filter(
@@ -64,7 +67,7 @@ function Cart({
                   </p>
                   <div className="cart__item--price">
                     {getSymbolFromCurrency(item.CURRENCY)} {item.PRICE}{" "}
-                    <span>x 3</span>
+                    <span>x {item.QUANTITY}</span>
                   </div>
                 </div>
               </div>
@@ -81,12 +84,11 @@ function Cart({
           </div>
           <div className="cart__footer--service cart__footer--item">
             <span>Service</span>
-            {getSymbolFromCurrency(currency)} {total % 10}
+            {getSymbolFromCurrency(currency)} 0
           </div>
 
           <div className="cart__footer--total cart__footer--item">
-            <span>Total</span> {getSymbolFromCurrency(currency)}{" "}
-            {total + (total % 10)}
+            <span>Total</span> {getSymbolFromCurrency(currency)} {total}
           </div>
         </div>
       </footer>

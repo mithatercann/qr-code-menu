@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import getSymbolFromCurrency from "currency-symbol-map";
 import { AiOutlineFieldTime } from "react-icons/ai";
 import { SlideDown } from "react-slidedown";
@@ -8,9 +8,23 @@ function MoreInfo({ data, isInfoOpened, closeInfo, location, addToCart }) {
     console.log(e.clientY + "container =" + e.target);
   };
 
+  const [quantity, setQuantity] = useState(0);
+
+  useEffect(() => {
+    if (quantity <= 0) {
+      setQuantity(0);
+    }
+  }, [quantity]);
+
   return (
     <div className={`info ${isInfoOpened ? "info__opened" : "info__closed"}`}>
-      <div onClick={() => closeInfo()} className="info__filter"></div>
+      <div
+        onClick={() => {
+          closeInfo();
+          setQuantity(0);
+        }}
+        className="info__filter"
+      ></div>
       <div className="info__container">
         <div className="info__wrapper">
           {data.map((item) => (
@@ -36,16 +50,32 @@ function MoreInfo({ data, isInfoOpened, closeInfo, location, addToCart }) {
                 </div>
                 <div className="info__duration">
                   <div className="info--btns">
-                    <button className="info--decrease">-</button>
-                    <span>0</span>
-                    <button className="info--increase">+</button>
+                    <button
+                      onClick={() => setQuantity(quantity - 1)}
+                      className="info--decrease"
+                    >
+                      -
+                    </button>
+                    <span>{quantity}</span>
+                    <button
+                      onClick={() => setQuantity(quantity + 1)}
+                      className="info--increase"
+                    >
+                      +
+                    </button>
                   </div>
                 </div>
               </div>
 
               <footer className="info__footer">
                 <button
-                  onClick={() => addToCart(item)}
+                  onClick={() => {
+                    if (quantity !== 0) {
+                      addToCart(item, quantity);
+                    }
+                    setQuantity(0);
+                    closeInfo();
+                  }}
                   className="info__btn info__btn--add"
                 >
                   Add to cart

@@ -67,7 +67,7 @@ const Layout = ({
         isInfoOpened={isInfoOpened}
         data={info}
         location={location}
-        addToCart={(item) => addToCart(item)}
+        addToCart={(item, quantity) => addToCart(item, quantity)}
       />
       <Footer />
     </div>
