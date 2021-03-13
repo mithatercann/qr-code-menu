@@ -1,20 +1,21 @@
 import React, { useEffect, useState } from "react";
 
 const MenuTitle = ({ menuTitles, callMenuList, location }) => {
-  const [titles, setTitles] = useState([]);
-
-  useEffect(() => {
-    if (!titles.includes(menuTitles)) {
-      setTitles(menuTitles);
-    }
-  }, [menuTitles]);
+  const [selected, setSelected] = useState("");
 
   return (
     <section className="menu__titles">
-      {titles.map((item) => (
-        <div className="menu__title">
+      {menuTitles.map((item) => (
+        <div
+          className={`menu__title ${
+            item == selected && "menu__title--selected"
+          }`}
+        >
           <div
-            onClick={(e) => callMenuList(item)}
+            onClick={(e) => {
+              callMenuList(item);
+              setSelected(item);
+            }}
             style={{
               backgroundImage: `url("/images${location}/${item
                 .split(" ")

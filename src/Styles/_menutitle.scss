@@ -18,15 +18,26 @@
   justify-content: center;
   color: rgb(58, 58, 58);
   text-align: center;
-
   margin: 0 15px;
 
+  &--selected {
+    div {
+      transition: 0.2s;
+      transform: scale(1.1);
+
+      box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.082);
+    }
+    small {
+      color: #4fa2dd;
+    }
+  }
   &--img {
     height: 100px;
     width: 160px;
     background-size: cover;
     background-position: center;
     border-radius: 10px;
+
     box-shadow: 0 0 15px 1px rgba(78, 78, 78, 0.055);
   }
 }

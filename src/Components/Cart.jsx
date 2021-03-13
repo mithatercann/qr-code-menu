@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { IoCloseOutline } from "react-icons/io5";
 import getSymbolFromCurrency from "currency-symbol-map";
-import SwipeToDelete from "react-swipe-to-delete-component";
+import Swipe from "react-easy-swipe";
 function Cart({
   currency,
   cartData,
@@ -50,28 +50,29 @@ function Cart({
           </div>
         ) : (
           cart.map((item) => (
-            <div className="cart__item">
-              <div className="cart__item--top">
-                <img
-                  className="cart__item--img"
-                  src={`/images${location}/${item.TYPE.split(" ").join(
-                    "_"
-                  )}.jpg`}
-                  alt={"image"}
-                />
-                <div className="cart__item--details">
-                  <span>{item.NAME}</span>
-                  <p>
-                    Here is for product's description that i will complete later
-                    on...
-                  </p>
-                  <div className="cart__item--price">
-                    {getSymbolFromCurrency(item.CURRENCY)} {item.PRICE}{" "}
-                    <span>x {item.QUANTITY}</span>
+            <Swipe onSwipeLeft={() => removeFromCart(item.CODE)}>
+              <div className="cart__item">
+                <div className="cart__item--top">
+                  <img
+                    className="cart__item--img"
+                    src={`/images${location}/${item.TYPE.split(" ").join(
+                      "_"
+                    )}.jpg`}
+                    alt={"image"}
+                  />
+                  <div className="cart__item--details">
+                    <span>{item.NAME}</span>
+                    <p>
+                      {item.DESCRIPTION.split("").splice(0, 60).join("")}...
+                    </p>
+                    <div className="cart__item--price">
+                      {getSymbolFromCurrency(item.CURRENCY)} {item.PRICE}{" "}
+                      <span>x {item.QUANTITY}</span>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </Swipe>
           ))
         )}
       </div>

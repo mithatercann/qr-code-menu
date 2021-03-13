@@ -413,6 +413,19 @@ body {
   margin: 0 15px;
 }
 
+.menu__title--selected div {
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.082);
+          box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.082);
+}
+
+.menu__title--selected small {
+  color: #4fa2dd;
+}
+
 .menu__title--img {
   height: 100px;
   width: 160px;
@@ -535,12 +548,11 @@ body {
 
 .cart__item--price span {
   font-size: 12px;
-  color: #d18016;
+  color: #6b6b6b;
 }
 
 .cart__footer {
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   background-color: white;
   bottom: 0;
   width: 100%;
