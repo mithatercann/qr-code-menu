@@ -110,3 +110,18 @@
 .opened {
   transform: translateX(0);
 }
+
+.selected {
+  animation: fadeOut 0.3s forwards;
+}
+
+@keyframes fadeOut {
+  50% {
+    transform: rotate(5deg) translateY(50px);
+    opacity: 0.7;
+  }
+  100% {
+    transform: rotate(5deg) translateY(50px);
+    opacity: 0;
+  }
+}

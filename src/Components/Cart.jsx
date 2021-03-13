@@ -13,7 +13,7 @@ function Cart({
 }) {
   const [total, setTotal] = useState(0);
   const [cart, setCart] = useState([]);
-
+  const [selected, setSelected] = useState("");
   useEffect(() => {
     const total = cartData.reduce(
       (acc, item) => parseInt(item.PRICE * item.QUANTITY) + acc,
@@ -28,6 +28,9 @@ function Cart({
     setCart(filtered);
   }, [cartData]);
 
+  const handleSwipe = () => {
+    console.log("swiped");
+  };
   return (
     <div className={`cart ${isCartOpened}`}>
       <nav>
@@ -42,16 +45,24 @@ function Cart({
         {cart.length === 0 ? (
           <div className="cart__info">
             <div>
-              <img
-                src="https://cdn.dribbble.com/users/44167/screenshots/4199208/empty-cart-rappi.png?compress=1&resize=800x600"
-                alt=""
-              />
+              <img src="/app-image/empty-cart-rappi.webp" alt="empty-cart" />
             </div>
           </div>
         ) : (
           cart.map((item) => (
-            <Swipe onSwipeLeft={() => removeFromCart(item.CODE)}>
-              <div className="cart__item">
+            <Swipe
+              onSwipeLeft={(e) => {
+                setSelected(item.CODE);
+                handleSwipe();
+                setTimeout(() => {
+                  removeFromCart(item.CODE);
+                  setSelected("");
+                }, 200);
+              }}
+            >
+              <div
+                className={`cart__item ${selected == item.CODE && "selected"}`}
+              >
                 <div className="cart__item--top">
                   <img
                     className="cart__item--img"
