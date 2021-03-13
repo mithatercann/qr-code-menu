@@ -41,67 +41,68 @@ function Cart({
           onClick={() => closeCart()}
         />
       </nav>
-      <div className="cart__container">
-        {cart.length === 0 ? (
-          <div className="cart__info">
-            <div>
-              <img src="/app-image/empty-cart-rappi.webp" alt="empty-cart" />
-            </div>
+
+      {cart.length === 0 ? (
+        <div className="cart__info">
+          <div>
+            <img src="/app-image/empty-cart-rappi.webp" alt="empty-cart" />
           </div>
-        ) : (
-          cart.map((item) => (
-            <Swipe
-              onSwipeLeft={(e) => {
-                setSelected(item.CODE);
-                handleSwipe();
-                setTimeout(() => {
-                  removeFromCart(item.CODE);
-                  setSelected("");
-                }, 200);
-              }}
+        </div>
+      ) : (
+        cart.map((item) => (
+          <Swipe
+            onSwipeLeft={(e) => {
+              setSelected(item.CODE);
+              handleSwipe();
+            }}
+          >
+            <div
+              onClick={() => setSelected()}
+              className={`cart__item ${selected == item.CODE && "selected"}`}
             >
-              <div
-                className={`cart__item ${selected == item.CODE && "selected"}`}
-              >
-                <div className="cart__item--top">
-                  <img
-                    className="cart__item--img"
-                    src={`/images${location}/${item.TYPE.split(" ").join(
-                      "_"
-                    )}.jpg`}
-                    alt={"image"}
-                  />
-                  <div className="cart__item--details">
-                    <span>{item.NAME}</span>
-                    <p>
-                      {item.DESCRIPTION.split("").splice(0, 60).join("")}...
-                    </p>
-                    <div className="cart__item--price">
-                      {getSymbolFromCurrency(item.CURRENCY)} {item.PRICE}{" "}
-                      <span>x {item.QUANTITY}</span>
-                    </div>
+              <div className="cart__item--inner">
+                <img
+                  className="cart__item--img"
+                  src={`/images${location}/${item.TYPE.split(" ").join(
+                    "_"
+                  )}.jpg`}
+                  alt={"image"}
+                />
+                <div className="cart__item--details">
+                  <span>{item.NAME}</span>
+                  <p>{item.DESCRIPTION.split("").splice(0, 60).join("")}...</p>
+                  <div className="cart__item--price">
+                    {getSymbolFromCurrency(item.CURRENCY)} {item.PRICE}{" "}
+                    <span>x {item.QUANTITY}</span>
                   </div>
                 </div>
               </div>
-            </Swipe>
-          ))
-        )}
-      </div>
-
+              <div className="cart__item--delete--filter"></div>
+              <div
+                onClick={() => removeFromCart(item.CODE)}
+                className="cart__item--delete"
+              >
+                X
+              </div>
+            </div>
+          </Swipe>
+        ))
+      )}
       <footer className="cart__footer">
-        <div className="cart__footer--container">
-          <div className="cart__footer--subtotal cart__footer--item">
-            <span>Subtotal</span>
-            {getSymbolFromCurrency(currency)} {total}
-          </div>
-          <div className="cart__footer--service cart__footer--item">
-            <span>Service</span>
-            {getSymbolFromCurrency(currency)} 0
-          </div>
-
-          <div className="cart__footer--total cart__footer--item">
-            <span>Total</span> {getSymbolFromCurrency(currency)} {total}
-          </div>
+        <div className="cart__footer--item">
+          <span>Subtotal</span>{" "}
+          <span>
+            {getSymbolFromCurrency("TRY")} {total}
+          </span>
+        </div>
+        <div className="cart__footer--item">
+          <span>Service</span> <span> {getSymbolFromCurrency("TRY")} 0</span>
+        </div>
+        <div className="cart__footer--item">
+          <span>Total</span>{" "}
+          <span>
+            {getSymbolFromCurrency("TRY")} {total}
+          </span>
         </div>
       </footer>
     </div>

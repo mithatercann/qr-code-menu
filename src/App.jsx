@@ -39,9 +39,6 @@ function App() {
     setInfo([item]);
     setIsInfoOpened(true);
     document.documentElement.style.overflowY = "hidden";
-    document.documentElement.addEventListener("touchmove", (e) => {
-      e.preventDefault();
-    });
   };
   const removeFromCart = (itemId) => {
     const cartItems = cart;
