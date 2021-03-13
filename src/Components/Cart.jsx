@@ -73,7 +73,6 @@ function Cart({
                   <p>{item.DESCRIPTION.split("").splice(0, 60).join("")}...</p>
                   <div className="cart__item--price">
                     {getSymbolFromCurrency(item.CURRENCY)} {item.PRICE}{" "}
-                    <span>x {item.QUANTITY}</span>
                   </div>
                 </div>
               </div>
@@ -88,23 +87,6 @@ function Cart({
           </Swipe>
         ))
       )}
-      <footer className="cart__footer">
-        <div className="cart__footer--item">
-          <span>Subtotal</span>{" "}
-          <span>
-            {getSymbolFromCurrency("TRY")} {total}
-          </span>
-        </div>
-        <div className="cart__footer--item">
-          <span>Service</span> <span> {getSymbolFromCurrency("TRY")} 0</span>
-        </div>
-        <div className="cart__footer--item">
-          <span>Total</span>{" "}
-          <span>
-            {getSymbolFromCurrency("TRY")} {total}
-          </span>
-        </div>
-      </footer>
     </div>
   );
 }

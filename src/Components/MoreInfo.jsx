@@ -48,21 +48,8 @@ function MoreInfo({ data, isInfoOpened, closeInfo, location, addToCart }) {
                       {getSymbolFromCurrency(item.CURRENCY)} {item.PRICE}
                     </div>
                     <div className="info__duration">
-                      <div className="info--btns">
-                        <button
-                          onClick={() => setQuantity(quantity - 1)}
-                          className="info--decrease"
-                        >
-                          -
-                        </button>
-                        <span>{quantity}</span>
-                        <button
-                          onClick={() => setQuantity(quantity + 1)}
-                          className="info--increase"
-                        >
-                          +
-                        </button>
-                      </div>
+                      <AiOutlineFieldTime size={20} />
+                      15-30 min
                     </div>
                   </div>
                   <button
