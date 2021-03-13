@@ -5,10 +5,6 @@ import Swipe from "react-easy-swipe";
 
 import "react-slidedown/lib/slidedown.css";
 function MoreInfo({ data, isInfoOpened, closeInfo, location, addToCart }) {
-  const handleMouseMove = (e) => {
-    console.log(e.clientY + "container =" + e.target);
-  };
-
   const [quantity, setQuantity] = useState(1);
 
   useEffect(() => {
@@ -39,37 +35,36 @@ function MoreInfo({ data, isInfoOpened, closeInfo, location, addToCart }) {
                   }}
                   className="info__img"
                 ></div>
-                <div className="info__top">
-                  <div className="info__details">
-                    <span>{item.NAME}</span>
-                    <p>{item.DESCRIPTION}</p>
-                  </div>
-                </div>
-
-                <div className="info__bottom">
-                  <div className="info__price">
-                    {getSymbolFromCurrency(item.CURRENCY)} {item.PRICE}
-                  </div>
-                  <div className="info__duration">
-                    <div className="info--btns">
-                      <button
-                        onClick={() => setQuantity(quantity - 1)}
-                        className="info--decrease"
-                      >
-                        -
-                      </button>
-                      <span>{quantity}</span>
-                      <button
-                        onClick={() => setQuantity(quantity + 1)}
-                        className="info--increase"
-                      >
-                        +
-                      </button>
+                <div className="info__inner">
+                  <div className="info__top">
+                    <div className="info__details">
+                      <span>{item.NAME}</span>
+                      <p>{item.DESCRIPTION}</p>
                     </div>
                   </div>
-                </div>
 
-                <footer className="info__footer">
+                  <div className="info__bottom">
+                    <div className="info__price">
+                      {getSymbolFromCurrency(item.CURRENCY)} {item.PRICE}
+                    </div>
+                    <div className="info__duration">
+                      <div className="info--btns">
+                        <button
+                          onClick={() => setQuantity(quantity - 1)}
+                          className="info--decrease"
+                        >
+                          -
+                        </button>
+                        <span>{quantity}</span>
+                        <button
+                          onClick={() => setQuantity(quantity + 1)}
+                          className="info--increase"
+                        >
+                          +
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                   <button
                     onClick={() => {
                       if (quantity !== 0) {
@@ -82,7 +77,7 @@ function MoreInfo({ data, isInfoOpened, closeInfo, location, addToCart }) {
                   >
                     Add to cart
                   </button>
-                </footer>
+                </div>
               </div>
             ))}
           </div>

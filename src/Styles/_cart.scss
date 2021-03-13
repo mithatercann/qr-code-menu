@@ -83,7 +83,7 @@
   }
 
   &__footer {
-    position: fixed;
+    position: sticky;
     background-color: white;
     bottom: 0;
     width: 100%;
@@ -117,11 +117,11 @@
 
 @keyframes fadeOut {
   50% {
-    transform: rotate(5deg) translateY(50px);
+    transform: rotate(5deg) translateY(100px);
     opacity: 0.7;
   }
   100% {
-    transform: rotate(5deg) translateY(50px);
+    transform: rotate(5deg) translateY(100px);
     opacity: 0;
   }
 }
