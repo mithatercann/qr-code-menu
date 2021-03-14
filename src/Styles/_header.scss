@@ -3,7 +3,8 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 15px;
+  height: 10vh;
+  padding: 0 20px;
   margin-bottom: 10px;
   background-color: white;
   display: flex;
@@ -17,11 +18,15 @@
     z-index: 200;
   }
   &__cart {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 50px;
     display: flex;
     align-items: center;
     svg {
       color: rgb(158, 158, 158);
-      margin: 0 9px;
+      margin: 0px;
     }
     i {
       position: absolute;

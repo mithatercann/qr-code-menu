@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { IoCloseOutline } from "react-icons/io5";
+import { MdDelete } from "react-icons/md";
 import getSymbolFromCurrency from "currency-symbol-map";
 import Swipe from "react-easy-swipe";
 function Cart({
-  currency,
   cartData,
   removeFromCart,
   isCartOpened,
@@ -11,26 +11,8 @@ function Cart({
   location,
   restaurantName,
 }) {
-  const [total, setTotal] = useState(0);
-  const [cart, setCart] = useState([]);
   const [selected, setSelected] = useState("");
-  useEffect(() => {
-    const total = cartData.reduce(
-      (acc, item) => parseInt(item.PRICE * item.QUANTITY) + acc,
-      0
-    );
-    setTotal(total);
 
-    const filtered = cartData.filter(
-      (item, index, self) => self.indexOf(item) == index
-    );
-
-    setCart(filtered);
-  }, [cartData]);
-
-  const handleSwipe = () => {
-    console.log("swiped");
-  };
   return (
     <div className={`cart ${isCartOpened}`}>
       <nav>
@@ -42,18 +24,17 @@ function Cart({
         />
       </nav>
 
-      {cart.length === 0 ? (
+      {cartData.length === 0 ? (
         <div className="cart__info">
           <div>
             <img src="/app-image/empty-cart-rappi.webp" alt="empty-cart" />
           </div>
         </div>
       ) : (
-        cart.map((item) => (
+        cartData.map((item) => (
           <Swipe
             onSwipeLeft={(e) => {
               setSelected(item.CODE);
-              handleSwipe();
             }}
           >
             <div
@@ -81,7 +62,7 @@ function Cart({
                 onClick={() => removeFromCart(item.CODE)}
                 className="cart__item--delete"
               >
-                X
+                <MdDelete size={22} />
               </div>
             </div>
           </Swipe>

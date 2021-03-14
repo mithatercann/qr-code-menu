@@ -23,16 +23,14 @@ const Layout = ({
   openInfo,
 }) => {
   const [isCartOpened, setIsCartOpened] = useState("closed");
-
+  const [blockScroll, setBlockScroll] = useState(false);
   const openCart = () => {
-    if (isCartOpened == "closed") {
-      setIsCartOpened("opened");
-    } else {
-      setIsCartOpened("closed");
-    }
+    setIsCartOpened("opened");
+    setBlockScroll(true);
   };
   const closeCart = () => {
     setIsCartOpened("closed");
+    setBlockScroll(false);
   };
 
   return (
@@ -52,6 +50,7 @@ const Layout = ({
         menuList={menuList}
         location={location}
         openInfo={(item) => openInfo(item)}
+        blockScroll={blockScroll}
       />
       <Cart
         currency={currency}

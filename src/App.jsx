@@ -26,9 +26,10 @@ function App() {
     setMenuList(filterMenuList);
   };
 
-  const addToCart = (data, quantity) => {
-    data.QUANTITY = quantity;
-    setCart([...cart, data]);
+  const addToCart = (data) => {
+    if (!cart.includes(data)) {
+      setCart([...cart, data]);
+    }
   };
 
   const closeInfo = () => {
