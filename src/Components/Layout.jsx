@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Header from "./Header";
 import MenuTitle from "./MenuTitle";
 import MenuList from "./MenuList";
@@ -24,6 +24,7 @@ const Layout = ({
 }) => {
   const [isCartOpened, setIsCartOpened] = useState("closed");
   const [blockScroll, setBlockScroll] = useState(false);
+  const [style, setStyle] = useState({});
   const openCart = () => {
     setIsCartOpened("opened");
     setBlockScroll(true);
@@ -33,8 +34,27 @@ const Layout = ({
     setBlockScroll(false);
   };
 
+  useEffect(() => {
+    if (isInfoOpened || isCartOpened == "opened") {
+      setStyle({
+        overflow: "hidden",
+        position: "fixed",
+        height: "100%",
+        width: "100%",
+      });
+    } else {
+      setTimeout(() => {
+        setStyle({
+          overflow: "",
+          position: "",
+          height: "",
+          width: "",
+        });
+      }, 600);
+    }
+  }, [isInfoOpened, isCartOpened]);
   return (
-    <div>
+    <div style={style}>
       <Header
         openCart={() => openCart()}
         cartData={cartData}
@@ -51,6 +71,7 @@ const Layout = ({
         location={location}
         openInfo={(item) => openInfo(item)}
         blockScroll={blockScroll}
+        isInfoOpened={isInfoOpened}
       />
       <Cart
         currency={currency}

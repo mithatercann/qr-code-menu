@@ -1,50 +1,47 @@
 import React, { useEffect, useState } from "react";
 import getSymbolFromCurrency from "currency-symbol-map";
 import { AiOutlineFieldTime } from "react-icons/ai";
-import Swipe from "react-easy-swipe";
-
 import "react-slidedown/lib/slidedown.css";
 function MoreInfo({ data, isInfoOpened, closeInfo, location, addToCart }) {
-  const [quantity, setQuantity] = useState(1);
   const [scrolled, setScrolled] = useState();
   const [transition, setTransition] = useState(0);
-  useEffect(() => {
-    if (quantity <= 1) {
-      setQuantity(1);
-    }
-  }, [quantity]);
-
   var style = {
+    bottom: `-${scrolled}px`,
     transition: `${transition}s`,
-    transform: `translateY(${scrolled}px)`,
   };
   const handleTouch = (e) => {
-    setScrolled(e.touches[0].clientY / 2);
-    setTransition(0);
+    setScrolled(e.touches[0].clientY / 1.7);
   };
   const handleTouchEnd = () => {
-    if (scrolled < 200) {
+    if (scrolled < 100) {
       setScrolled(0);
     } else {
+      setTransition(1);
+      setScrolled(500);
       closeInfo();
-      setTransition(0.2);
-      setScrolled(0);
+      setTimeout(() => {
+        setScrolled(0);
+        setTransition(0);
+      }, 500);
     }
   };
+
   return (
-    <div
-      onTouchMove={(e) => handleTouch(e)}
-      onTouchEnd={() => handleTouchEnd()}
-      className={`info ${isInfoOpened ? "info__opened" : "info__closed"}`}
-    >
+    <div className={`info ${isInfoOpened ? "info__opened" : "info__closed"}`}>
       <div
         onClick={() => {
           closeInfo();
-          setQuantity(1);
         }}
         className="info__filter"
       ></div>
-      <div className="info__container" style={style}>
+      <div
+        className={`info__container ${
+          isInfoOpened ? "info__container--opened" : "info__container--closed"
+        }`}
+        onTouchMove={(e) => handleTouch(e)}
+        onTouchEnd={() => handleTouchEnd()}
+        style={style}
+      >
         <div className="info__wrapper">
           {data.map((item) => (
             <div>
@@ -75,10 +72,8 @@ function MoreInfo({ data, isInfoOpened, closeInfo, location, addToCart }) {
                 </div>
                 <button
                   onClick={() => {
-                    if (quantity !== 0) {
-                      addToCart(item, quantity);
-                    }
-                    setQuantity(1);
+                    addToCart(item);
+
                     closeInfo();
                   }}
                   className="info__btn info__btn--add"

@@ -82,7 +82,7 @@
   width: 100vw;
   height: 100vh;
   color: rgb(0, 0, 0);
-  transition: 0.2s;
+  transition: 0.5s;
 
   &__filter {
     width: 100%;
@@ -90,7 +90,6 @@
     background-color: rgba(0, 0, 0, 0.678);
   }
   &__container {
-    transition: 0.3s;
     display: flex;
     justify-content: center;
     position: fixed;
@@ -100,10 +99,16 @@
     min-height: auto;
     background-color: rgb(255, 255, 255);
     border-radius: 30px 30px 0 0;
+
+    &--opened {
+      bottom: 0%;
+    }
+    &--closed {
+      bottom: -100%;
+    }
   }
 
   &__opened {
-    transform: translateY(0);
     body {
       overflow-y: hidden;
     }
@@ -120,11 +125,12 @@
   }
   &__details {
     span {
-      font-size: 15px;
+      font-size: 18px;
       font-weight: 500;
     }
     p {
-      font-size: 14px;
+      width: fit-content;
+      font-size: 15px;
       color: rgb(107, 107, 107);
       margin: 7px 0;
       padding-right: 7px;
@@ -160,28 +166,6 @@
     box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.068);
     border-radius: 30px 30px 0 0;
   }
-  &--btns {
-    display: flex;
-    align-items: center;
-    height: auto;
-    span {
-      font-size: 13px;
-      color: gray;
-      margin: 0 10px;
-    }
-    button {
-      background-color: #4fa2dd;
-      color: #fff;
-      border-radius: 50%;
-      outline: none;
-      border: none;
-      width: 40px;
-      height: 40px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  }
 
   &__btn {
     outline: none;
@@ -194,18 +178,10 @@
 
     &--add {
       margin: 30px 0;
-      background: #56ccf2; /* fallback for old browsers */
+      background: #56ccf2;
       box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.13);
-      background: -webkit-linear-gradient(
-        to right,
-        #2f80ed,
-        #56ccf2
-      ); /* Chrome 10-25, Safari 5.1-6 */
-      background: linear-gradient(
-        to right,
-        #2f80ed,
-        #56ccf2
-      ); /* W3C, IE 10+djj/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      background: -webkit-linear-gradient(to right, #2f80ed, #56ccf2);
+      background: linear-gradient(to right, #2f80ed, #56ccf2);
 
       color: #fff;
     }

@@ -4,7 +4,6 @@
 }
 
 html {
-  overflow: scroll;
   overflow-x: hidden;
 }
 
@@ -30,13 +29,11 @@ body {
 }
 
 .header {
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 10vh;
-  padding: 0 20px;
+  padding: 25px;
   margin-bottom: 10px;
   background-color: white;
   display: -webkit-box;
@@ -48,7 +45,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  z-index: 10;
+  z-index: 9;
   -webkit-box-shadow: 0 1px 13px 0 #e6e6e6;
           box-shadow: 0 1px 13px 0 #e6e6e6;
 }
@@ -88,8 +85,8 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  right: 10px;
-  top: 5px;
+  right: 14px;
+  top: 12px;
   background-color: #5cb6f8;
   color: white;
   width: 15px;
@@ -212,8 +209,8 @@ body {
   width: 100vw;
   height: 100vh;
   color: black;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
 .info__filter {
@@ -223,8 +220,6 @@ body {
 }
 
 .info__container {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -240,9 +235,12 @@ body {
   border-radius: 30px 30px 0 0;
 }
 
-.info__opened {
-  -webkit-transform: translateY(0);
-          transform: translateY(0);
+.info__container--opened {
+  bottom: 0%;
+}
+
+.info__container--closed {
+  bottom: -100%;
 }
 
 .info__opened body {
@@ -266,12 +264,15 @@ body {
 }
 
 .info__details span {
-  font-size: 15px;
+  font-size: 18px;
   font-weight: 500;
 }
 
 .info__details p {
-  font-size: 14px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 15px;
   color: #6b6b6b;
   margin: 7px 0;
   padding-right: 7px;
@@ -321,41 +322,6 @@ body {
   border-radius: 30px 30px 0 0;
 }
 
-.info--btns {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: auto;
-}
-
-.info--btns span {
-  font-size: 13px;
-  color: gray;
-  margin: 0 10px;
-}
-
-.info--btns button {
-  background-color: #4fa2dd;
-  color: #fff;
-  border-radius: 50%;
-  outline: none;
-  border: none;
-  width: 40px;
-  height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .info__btn {
   outline: none;
   border: none;
@@ -368,13 +334,10 @@ body {
 .info__btn--add {
   margin: 30px 0;
   background: #56ccf2;
-  /* fallback for old browsers */
   -webkit-box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.13);
           box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.13);
-  /* Chrome 10-25, Safari 5.1-6 */
   background: -webkit-gradient(linear, left top, right top, from(#2f80ed), to(#56ccf2));
   background: linear-gradient(to right, #2f80ed, #56ccf2);
-  /* W3C, IE 10+djj/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #fff;
 }
 
@@ -387,6 +350,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   overflow-x: scroll;
+  margin-top: 70px;
 }
 
 .menu__titles small {
@@ -440,8 +404,8 @@ body {
 
 .cart {
   position: fixed;
-  z-index: 10;
   overflow-y: scroll;
+  z-index: 10;
   width: 100vw;
   height: 100%;
   right: 0;
@@ -455,13 +419,14 @@ body {
 }
 
 .cart nav {
-  font-family: abeja;
   position: -webkit-sticky;
   position: sticky;
+  font-family: abeja;
   z-index: 11;
   top: 0;
-  height: 10vh;
-  padding: 0 15px;
+  left: 0;
+  width: 100%;
+  padding: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -479,7 +444,7 @@ body {
 
 .cart__info {
   width: 100%;
-  min-height: 80vh;
+  min-height: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -540,6 +505,7 @@ body {
 }
 
 .cart__item--img {
+  max-width: 110px;
   min-width: 110px;
   height: 100px;
   border-radius: 15px;
@@ -628,7 +594,7 @@ body {
 }
 
 .selected .cart__item--delete {
-  width: 130px;
+  width: 140px;
 }
 
 .selected .cart__item--delete--filter {

@@ -1,16 +1,15 @@
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  height: 10vh;
-  padding: 0 20px;
+  padding: 25px;
   margin-bottom: 10px;
   background-color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  z-index: 10;
+  z-index: 9;
   box-shadow: 0 1px 13px 0 rgb(230, 230, 230);
   &__logo {
     font-family: abeja;
@@ -33,8 +32,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      right: 10px;
-      top: 5px;
+      right: 14px;
+      top: 12px;
       background-color: #5cb6f8;
       color: white;
       width: 15px;

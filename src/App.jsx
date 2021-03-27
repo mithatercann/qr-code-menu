@@ -34,12 +34,10 @@ function App() {
 
   const closeInfo = () => {
     setIsInfoOpened(false);
-    document.documentElement.style.overflowY = "scroll";
   };
   const openInfo = (item) => {
     setInfo([item]);
     setIsInfoOpened(true);
-    document.documentElement.style.overflowY = "hidden";
   };
   const removeFromCart = (itemId) => {
     const cartItems = cart;
