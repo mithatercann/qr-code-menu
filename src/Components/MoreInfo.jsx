@@ -35,9 +35,7 @@ function MoreInfo({ data, isInfoOpened, closeInfo, location, addToCart }) {
         className="info__filter"
       ></div>
       <div
-        className={`info__container ${
-          isInfoOpened ? "info__container--opened" : "info__container--closed"
-        }`}
+        className="info__container"
         onTouchMove={(e) => handleTouch(e)}
         onTouchEnd={() => handleTouchEnd()}
         style={style}
