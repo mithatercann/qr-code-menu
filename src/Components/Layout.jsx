@@ -29,12 +29,27 @@ const Layout = ({
   openCartInfo,
 }) => {
   const [isCartOpened, setIsCartOpened] = useState("closed");
+  const [style, setStyle] = useState({});
 
   const openCart = () => {
     setIsCartOpened("opened");
+    setTimeout(() => {
+      setStyle({
+        position: "fixed",
+        overflow: "hidden",
+        width: "100%",
+        height: "100%",
+      });
+    }, 150);
   };
   const closeCart = () => {
     setIsCartOpened("closed");
+    setStyle({
+      position: "",
+      overflow: "",
+      width: "",
+      height: "",
+    });
   };
 
   useEffect(() => {
@@ -47,7 +62,7 @@ const Layout = ({
     }
   }, [isInfoOpened, isCartInfoOpened]);
   return (
-    <div>
+    <div style={style}>
       <Header
         openCart={() => openCart()}
         cartData={cartData}

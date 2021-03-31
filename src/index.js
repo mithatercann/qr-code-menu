@@ -7,7 +7,7 @@ function Index() {
   const w = window.innerWidth;
   console.log("width = " + w);
 
-  return <Routers />;
+  return w >= 450 ? <h1>This app is only for mobile</h1> : <Routers />;
 }
-//w >= 450 ? <h1>This app is only for mobile</h1> :
+
 render(<Index />, document.getElementById("root"));
