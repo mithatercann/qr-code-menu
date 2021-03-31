@@ -5,32 +5,48 @@ import "react-slidedown/lib/slidedown.css";
 function MoreInfoCart({
   data,
   isCartInfoOpened,
-
   location,
-
   removeFromCart,
   closeCartInfo,
 }) {
   const [scrolled, setScrolled] = useState(0);
   const [transition, setTransition] = useState(0);
+  const [opacity, setOpacity] = useState(0);
+
   var style = {
     bottom: `-${scrolled}px`,
     transition: `${transition}s`,
   };
+  var filterStyle = {
+    opacity: opacity,
+  };
+  useEffect(() => {
+    if (isCartInfoOpened) {
+      setTimeout(() => setOpacity(1), 220);
+    }
+  }, [isCartInfoOpened]);
+
   const handleTouch = (e) => {
     setScrolled(e.touches[0].clientY / 1.7);
   };
   const handleTouchEnd = () => {
-    if (scrolled < 100) {
+    if (scrolled < 140) {
       setScrolled(0);
+      setTransition(0.1);
+      setTimeout(() => {
+        setTransition(0);
+      }, 290);
     } else {
-      setTransition(0.3);
+      setTransition(0.2);
       setScrolled(scrolled * 2);
-      closeCartInfo();
+      setOpacity(0);
+      setTimeout(() => {
+        closeCartInfo();
+      }, 80);
       setTimeout(() => {
         setScrolled(0);
         setTransition(0);
-      }, 320);
+      }, 500);
     }
   };
 
@@ -40,9 +56,13 @@ function MoreInfoCart({
     >
       <div
         onClick={() => {
-          closeCartInfo();
+          setOpacity(0);
+          setTimeout(() => {
+            closeCartInfo();
+          }, 80);
         }}
         className="info__filter"
+        style={filterStyle}
       ></div>
       <div
         className="info__container"
@@ -85,7 +105,11 @@ function MoreInfoCart({
                 <button
                   onClick={() => {
                     removeFromCart(item.CODE);
-                    closeCartInfo();
+
+                    setOpacity(0);
+                    setTimeout(() => {
+                      closeCartInfo();
+                    }, 80);
                   }}
                   className="info__btn info__btn--delete"
                 >

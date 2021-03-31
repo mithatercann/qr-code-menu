@@ -58,7 +58,7 @@ const Layout = ({
     } else {
       setTimeout(() => {
         enablePageScroll();
-      }, 500);
+      }, 220);
     }
   }, [isInfoOpened, isCartInfoOpened]);
   return (

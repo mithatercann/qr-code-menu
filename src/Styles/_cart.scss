@@ -140,16 +140,3 @@
 .opened {
   transform: translateX(0);
 }
-
-.selected {
-  .cart__item--inner {
-    transform: translateX(-120px);
-  }
-
-  .cart__item--delete {
-    width: 140px;
-    &--filter {
-      opacity: 1;
-    }
-  }
-}
