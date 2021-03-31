@@ -13,6 +13,9 @@ html {
 }
 
 * {
+  -ms-overflow-style: none;
+  -webkit-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
@@ -33,7 +36,8 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 25px;
+  padding: 0 25px;
+  height: 70px;
   margin-bottom: 10px;
   background-color: white;
   display: -webkit-box;
@@ -60,13 +64,16 @@ body {
   position: absolute;
   right: 0;
   height: 100%;
-  width: 50px;
+  width: 70px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .header__cart svg {
@@ -85,7 +92,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  right: 14px;
+  right: 11px;
   top: 12px;
   background-color: #5cb6f8;
   color: white;
@@ -209,8 +216,8 @@ body {
   width: 100vw;
   height: 100vh;
   color: black;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .info__filter {
@@ -226,16 +233,15 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: fixed;
+  position: absolute;
   overflow: hidden;
-  bottom: 0;
   width: 100%;
   min-height: auto;
   background-color: white;
   border-radius: 30px 30px 0 0;
 }
 
-@media screen and (max-height: 600px) {
+@media screen and (max-width: 340px) {
   .info__container {
     height: 70vh;
   }
@@ -266,7 +272,7 @@ body {
   font-weight: 500;
 }
 
-@media screen and (max-height: 600px) {
+@media screen and (max-width: 340px) {
   .info__details span {
     font-size: 16px;
   }
@@ -282,7 +288,7 @@ body {
   padding-right: 7px;
 }
 
-@media screen and (max-height: 600px) {
+@media screen and (max-width: 340px) {
   .info__details p {
     font-size: 14px;
   }
@@ -303,7 +309,7 @@ body {
   margin: 10px 0 0 0;
 }
 
-@media screen and (max-height: 600px) {
+@media screen and (max-width: 340px) {
   .info__bottom {
     margin: 3px 0 0 0;
     font-size: 15px;
@@ -339,7 +345,7 @@ body {
   border-radius: 30px 30px 0 0;
 }
 
-@media screen and (max-height: 600px) {
+@media screen and (max-width: 340px) {
   .info__img {
     height: 170px;
   }
@@ -354,7 +360,7 @@ body {
   font-size: 14px;
 }
 
-@media screen and (max-height: 600px) {
+@media screen and (max-width: 340px) {
   .info__btn {
     padding: 13px 0;
   }
@@ -370,8 +376,24 @@ body {
   color: #fff;
 }
 
-@media screen and (max-height: 600px) {
+@media screen and (max-width: 340px) {
   .info__btn--add {
+    margin: 17px 0;
+  }
+}
+
+.info__btn--delete {
+  margin: 30px 0;
+  background: #56ccf2;
+  -webkit-box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.13);
+          box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.13);
+  background-color: #990000;
+  background-image: linear-gradient(147deg, #990000 0%, #ff0000 74%);
+  color: #fff;
+}
+
+@media screen and (max-width: 340px) {
+  .info__btn--delete {
     margin: 17px 0;
   }
 }
@@ -457,11 +479,12 @@ body {
   position: -webkit-sticky;
   position: sticky;
   font-family: abeja;
-  z-index: 11;
+  z-index: 111;
   top: 0;
   left: 0;
   width: 100%;
-  padding: 20px;
+  height: 70px;
+  padding: 0 0 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -475,6 +498,15 @@ body {
           justify-content: space-between;
   -webkit-box-shadow: 0 1px 13px 0 #e6e6e6;
           box-shadow: 0 1px 13px 0 #e6e6e6;
+}
+
+.cart nav .close {
+  padding: 15px;
+}
+
+.cart .break {
+  width: 100%;
+  height: 10px;
 }
 
 .cart__info {
@@ -503,11 +535,12 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 130px;
   color: #252525;
+  background-color: #fff;
   border-bottom: 1px solid #ececec;
   width: 100%;
-  margin: 11px 0;
-  padding: 18px 10px;
+  padding: 0 15px;
 }
 
 .cart__item:nth-last-child(1) {
@@ -535,6 +568,7 @@ body {
 }
 
 .cart__item--details p {
+  margin: 8px 0;
   font-size: 14px;
   color: #6b6b6b;
 }

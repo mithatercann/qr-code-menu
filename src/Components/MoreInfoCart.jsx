@@ -2,7 +2,15 @@ import React, { useEffect, useState } from "react";
 import getSymbolFromCurrency from "currency-symbol-map";
 import { AiOutlineFieldTime } from "react-icons/ai";
 import "react-slidedown/lib/slidedown.css";
-function MoreInfo({ data, isInfoOpened, closeInfo, location, addToCart }) {
+function MoreInfoCart({
+  data,
+  isCartInfoOpened,
+
+  location,
+
+  removeFromCart,
+  closeCartInfo,
+}) {
   const [scrolled, setScrolled] = useState(0);
   const [transition, setTransition] = useState(0);
   var style = {
@@ -18,7 +26,7 @@ function MoreInfo({ data, isInfoOpened, closeInfo, location, addToCart }) {
     } else {
       setTransition(0.3);
       setScrolled(scrolled * 2);
-      closeInfo();
+      closeCartInfo();
       setTimeout(() => {
         setScrolled(0);
         setTransition(0);
@@ -27,10 +35,12 @@ function MoreInfo({ data, isInfoOpened, closeInfo, location, addToCart }) {
   };
 
   return (
-    <div className={`info ${isInfoOpened ? "info__opened" : "info__closed"}`}>
+    <div
+      className={`info ${isCartInfoOpened ? "info__opened" : "info__closed"}`}
+    >
       <div
         onClick={() => {
-          closeInfo();
+          closeCartInfo();
         }}
         className="info__filter"
       ></div>
@@ -70,12 +80,12 @@ function MoreInfo({ data, isInfoOpened, closeInfo, location, addToCart }) {
                 </div>
                 <button
                   onClick={() => {
-                    addToCart(item);
-                    closeInfo();
+                    removeFromCart(item.CODE);
+                    closeCartInfo();
                   }}
-                  className="info__btn info__btn--add"
+                  className="info__btn info__btn--delete"
                 >
-                  Add to cart
+                  Remove from cart
                 </button>
               </div>
             </div>
@@ -86,4 +96,4 @@ function MoreInfo({ data, isInfoOpened, closeInfo, location, addToCart }) {
   );
 }
 
-export default MoreInfo;
+export default MoreInfoCart;

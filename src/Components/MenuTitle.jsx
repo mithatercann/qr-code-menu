@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import HorizontalScroll from "react-scroll-horizontal";
 
 const MenuTitle = ({ menuTitles, callMenuList, location }) => {
   const [selected, setSelected] = useState("");

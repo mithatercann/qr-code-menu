@@ -3,7 +3,8 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 25px;
+  padding: 0 25px;
+  height: 70px;
   margin-bottom: 10px;
   background-color: white;
   display: flex;
@@ -20,9 +21,10 @@
     position: absolute;
     right: 0;
     height: 100%;
-    width: 50px;
+    width: 70px;
     display: flex;
     align-items: center;
+    justify-content: center;
     svg {
       color: rgb(158, 158, 158);
       margin: 0px;
@@ -32,7 +34,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      right: 14px;
+      right: 11px;
       top: 12px;
       background-color: #5cb6f8;
       color: white;

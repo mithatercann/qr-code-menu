@@ -11,7 +11,9 @@ function App() {
   const [menuList, setMenuList] = useState([]);
   const [cart, setCart] = useState([]);
   const [info, setInfo] = useState([]);
+  const [cartInfo, setCartInfo] = useState([]);
   const [isInfoOpened, setIsInfoOpened] = useState(false);
+  const [isCartInfoOpened, setIsCartInfoOpened] = useState(false);
   const API = `./database${location.pathname}/db.json`;
 
   const restaurantName = location.pathname
@@ -35,17 +37,27 @@ function App() {
   const closeInfo = () => {
     setIsInfoOpened(false);
   };
+
+  const closeCartInfo = () => {
+    setIsCartInfoOpened(false);
+  };
+
   const openInfo = (item) => {
     setInfo([item]);
     setIsInfoOpened(true);
   };
-  const removeFromCart = (itemId) => {
-    const cartItems = cart;
 
+  const openCartInfo = (item) => {
+    setCartInfo([item]);
+    setIsCartInfoOpened(true);
+  };
+
+  const removeFromCart = (itemCode) => {
+    const cartItems = cart;
     cartItems.map((item) => {
-      if (item.CODE == itemId) {
+      if (item.CODE == itemCode) {
         const filtered = cartItems.filter(
-          (cartItem) => cartItem.CODE != itemId
+          (cartItem) => cartItem.CODE != itemCode
         );
         setCart(filtered);
       }
@@ -85,16 +97,20 @@ function App() {
       data={data}
       callMenuList={(titleProp) => callMenuList(titleProp)}
       addToCart={(data, quantity) => addToCart(data, quantity)}
-      removeFromCart={(itemId) => removeFromCart(itemId)}
+      removeFromCart={(itemCode) => removeFromCart(itemCode)}
       cartData={cart}
       title={title}
       currency={currency}
       location={location.pathname}
       restaurantName={restaurantName}
       info={info}
+      cartInfo={cartInfo}
       isInfoOpened={isInfoOpened}
+      isCartInfoOpened={isCartInfoOpened}
       closeInfo={() => closeInfo()}
       openInfo={(item) => openInfo(item)}
+      openCartInfo={(item) => openCartInfo(item)}
+      closeCartInfo={() => closeCartInfo()}
     />
   );
 }

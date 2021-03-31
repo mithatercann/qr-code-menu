@@ -4,8 +4,8 @@ function Header({ openCart, cartData, restaurantName }) {
   return (
     <header className="header">
       <p className="header__logo">{restaurantName}</p>
-      <span className="header__cart">
-        <FiShoppingCart onClick={() => openCart()} size={24} />
+      <span onClick={() => openCart()} className="header__cart">
+        <FiShoppingCart size={24} />
         <i>{cartData.length}</i>
       </span>
     </header>

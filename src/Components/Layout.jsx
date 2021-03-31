@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from "react";
+import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import Header from "./Header";
 import MenuTitle from "./MenuTitle";
 import MenuList from "./MenuList";
 import Cart from "./Cart";
 import MoreInfo from "./MoreInfo";
+import MoreInfoCart from "./MoreInfoCart";
 import Footer from "./Footer";
 
 const Layout = ({
@@ -18,43 +20,34 @@ const Layout = ({
   location,
   restaurantName,
   info,
+  cartInfo,
   isInfoOpened,
+  isCartInfoOpened,
   closeInfo,
+  closeCartInfo,
   openInfo,
+  openCartInfo,
 }) => {
   const [isCartOpened, setIsCartOpened] = useState("closed");
-  const [blockScroll, setBlockScroll] = useState(false);
-  const [style, setStyle] = useState({});
+
   const openCart = () => {
     setIsCartOpened("opened");
-    setBlockScroll(true);
   };
   const closeCart = () => {
     setIsCartOpened("closed");
-    setBlockScroll(false);
   };
 
   useEffect(() => {
-    if (isInfoOpened || isCartOpened == "opened") {
-      setStyle({
-        overflow: "hidden",
-        position: "fixed",
-        height: "100%",
-        width: "100%",
-      });
+    if (isInfoOpened || isCartInfoOpened) {
+      disablePageScroll();
     } else {
       setTimeout(() => {
-        setStyle({
-          overflow: "",
-          position: "",
-          height: "",
-          width: "",
-        });
-      }, 600);
+        enablePageScroll();
+      }, 500);
     }
-  }, [isInfoOpened, isCartOpened]);
+  }, [isInfoOpened, isCartInfoOpened]);
   return (
-    <div style={style}>
+    <div>
       <Header
         openCart={() => openCart()}
         cartData={cartData}
@@ -70,13 +63,12 @@ const Layout = ({
         menuList={menuList}
         location={location}
         openInfo={(item) => openInfo(item)}
-        blockScroll={blockScroll}
         isInfoOpened={isInfoOpened}
       />
       <Cart
         currency={currency}
         cartData={cartData}
-        removeFromCart={(itemId) => removeFromCart(itemId)}
+        openCartInfo={(item) => openCartInfo(item)}
         isCartOpened={isCartOpened}
         closeCart={() => closeCart()}
         location={location}
@@ -88,6 +80,14 @@ const Layout = ({
         data={info}
         location={location}
         addToCart={(item, quantity) => addToCart(item, quantity)}
+      />
+      <MoreInfoCart
+        closeCartInfo={() => closeCartInfo()}
+        isCartInfoOpened={isCartInfoOpened}
+        data={cartInfo}
+        location={location}
+        addToCart={(item, quantity) => addToCart(item, quantity)}
+        removeFromCart={(itemCode) => removeFromCart(itemCode)}
       />
       <Footer />
     </div>

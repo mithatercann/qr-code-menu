@@ -11,6 +11,9 @@ html {
 }
 
 * {
+  -ms-overflow-style: none;
+  -webkit-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
