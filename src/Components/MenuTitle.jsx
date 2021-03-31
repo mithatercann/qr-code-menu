@@ -18,7 +18,7 @@ const MenuTitle = ({ menuTitles, callMenuList, location }) => {
               setSelected(item);
             }}
             style={{
-              backgroundImage: `url("/images${location}/${item
+              backgroundImage: `url("/images${location}/categories/${item
                 .split(" ")
                 .join("_")}.jpg")`,
             }}

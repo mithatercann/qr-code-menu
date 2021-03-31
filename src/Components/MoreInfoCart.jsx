@@ -55,9 +55,13 @@ function MoreInfoCart({
             <div>
               <div
                 style={{
-                  backgroundImage: `url('/images${location}/${item.TYPE.split(
-                    " "
-                  ).join("_")}.jpg')`,
+                  backgroundImage: `url('/images${location}/${
+                    item.PIC == "true" ? "pics" : "categories"
+                  }/${
+                    item.PIC == "true"
+                      ? item.NAME.split(" ").join("_")
+                      : item.TYPE.split(" ").join("_")
+                  }.jpg')`,
                 }}
                 className="info__img"
               ></div>
@@ -75,7 +79,7 @@ function MoreInfoCart({
                   </div>
                   <div className="info__duration">
                     <AiOutlineFieldTime size={20} />
-                    15-30 min
+                    {item.DURATION} min
                   </div>
                 </div>
                 <button

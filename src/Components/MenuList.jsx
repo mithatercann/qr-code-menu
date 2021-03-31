@@ -24,7 +24,13 @@ const MenuList = ({ menuList, title, location, openInfo }) => {
               </div>
               <img
                 className={"menu__list--img"}
-                src={`/images${location}/${item.TYPE.split(" ").join("_")}.jpg`}
+                src={`/images${location}/${
+                  item.PIC == "true" ? "pics" : "categories"
+                }/${
+                  item.PIC == "true"
+                    ? item.NAME.split(" ").join("_")
+                    : item.TYPE.split(" ").join("_")
+                }.jpg`}
                 alt={"image"}
               />
             </div>
@@ -34,7 +40,7 @@ const MenuList = ({ menuList, title, location, openInfo }) => {
               </div>
               <div className="menu__list-duration">
                 <AiOutlineFieldTime size={20} />
-                15-30 min
+                {item.DURATION} min
               </div>
             </div>
           </span>

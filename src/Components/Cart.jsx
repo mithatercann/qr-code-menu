@@ -41,9 +41,13 @@ function Cart({
               <div className="cart__item--inner">
                 <img
                   className="cart__item--img"
-                  src={`/images${location}/${item.TYPE.split(" ").join(
-                    "_"
-                  )}.jpg`}
+                  src={`/images${location}/${
+                    item.PIC == "true" ? "pics" : "categories"
+                  }/${
+                    item.PIC == "true"
+                      ? item.NAME.split(" ").join("_")
+                      : item.TYPE.split(" ").join("_")
+                  }.jpg`}
                   alt={"image"}
                 />
                 <div className="cart__item--details">
