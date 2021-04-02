@@ -111,6 +111,7 @@ function App() {
       openInfo={(item) => openInfo(item)}
       openCartInfo={(item) => openCartInfo(item)}
       closeCartInfo={() => closeCartInfo()}
+      fullData={data}
     />
   );
 }

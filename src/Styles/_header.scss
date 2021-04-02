@@ -3,7 +3,6 @@
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0 25px;
   height: 70px;
   margin-bottom: 10px;
   background-color: white;
@@ -12,30 +11,66 @@
   align-items: center;
   z-index: 9;
   box-shadow: 0 1px 13px 0 rgb(230, 230, 230);
+
+  &__fixed {
+    box-shadow: none;
+  }
   &__logo {
     font-family: abeja;
     color: rgb(107, 107, 107);
     z-index: 200;
+    flex: 1;
+    padding: 0 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  &__input {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: rgb(153, 153, 153);
+    flex: 7;
+    margin-right: -10px;
+    z-index: 3;
+    input {
+      font-size: 14px;
+      border: none;
+      border-bottom: 1px solid rgb(230, 230, 230);
+      border-radius: 0;
+      outline: none;
+      width: 0;
+      color: gray;
+      transition: 0.2s;
+    }
+  }
+  .opened {
+    width: 90%;
+  }
+  .close {
+    width: 0;
   }
   &__cart {
-    position: absolute;
-    right: 0;
+    flex: 1;
     height: 100%;
-    width: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0 20px;
+    &--inner {
+      position: relative;
+    }
     svg {
       color: rgb(158, 158, 158);
-      margin: 0px;
     }
     i {
       position: absolute;
       display: flex;
       justify-content: center;
       align-items: center;
-      right: 11px;
-      top: 12px;
+      right: -11px;
+      top: -11px;
       background-color: #5cb6f8;
       color: white;
       width: 15px;

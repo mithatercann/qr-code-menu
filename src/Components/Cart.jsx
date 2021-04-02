@@ -10,6 +10,12 @@ function Cart({
   location,
   restaurantName,
 }) {
+  useEffect(() => {
+    if (cartData.length === 0) {
+      closeCart();
+    }
+  }, [cartData]);
+
   return (
     <div className={`cart ${isCartOpened}`}>
       <nav>
