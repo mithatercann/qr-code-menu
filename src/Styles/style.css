@@ -310,7 +310,7 @@ body {
 
 @media screen and (max-width: 340px) {
   .info__container {
-    height: 72vh;
+    height: 74vh;
   }
 }
 
@@ -449,7 +449,7 @@ body {
 
 @media screen and (max-width: 340px) {
   .info__btn--add {
-    margin: 20px 0;
+    margin: 22px 0;
   }
 }
 
@@ -469,7 +469,7 @@ body {
 
 @media screen and (max-width: 340px) {
   .info__btn--delete {
-    margin: 20px 0;
+    margin: 22px 0;
   }
 }
 
