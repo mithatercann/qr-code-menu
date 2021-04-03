@@ -95,18 +95,20 @@ body {
   border-bottom: 1px solid #e6e6e6;
   border-radius: 0;
   outline: none;
-  width: 0;
+  width: 20px;
+  height: 30px;
+  margin-right: -23px;
+  z-index: 2;
   color: gray;
   -webkit-transition: 0.2s;
   transition: 0.2s;
+  opacity: 0;
 }
 
 .header .opened {
+  opacity: 1;
   width: 90%;
-}
-
-.header .close {
-  width: 0;
+  margin: 0;
 }
 
 .header__cart {
@@ -308,7 +310,7 @@ body {
 
 @media screen and (max-width: 340px) {
   .info__container {
-    height: 70vh;
+    height: 72vh;
   }
 }
 
@@ -447,7 +449,7 @@ body {
 
 @media screen and (max-width: 340px) {
   .info__btn--add {
-    margin: 23px 0;
+    margin: 20px 0;
   }
 }
 
@@ -467,11 +469,12 @@ body {
 
 @media screen and (max-width: 340px) {
   .info__btn--delete {
-    margin: 23px 0;
+    margin: 20px 0;
   }
 }
 
 .menu__titles {
+  z-index: 5;
   padding: 20px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -481,6 +484,9 @@ body {
           align-items: center;
   overflow-x: scroll;
   margin-top: 70px;
+  background-color: #fff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
   -ms-overflow-style: none;
   -webkit-overflow-style: none;
   -webkit-overflow-scrolling: touch;
@@ -498,15 +504,13 @@ body {
 }
 
 .menu__titles--fixed {
-  height: 80px;
-  padding-top: 50px;
+  height: 70px;
+  padding-top: 20px;
   position: fixed;
   overflow-x: scroll;
   overflow-y: hidden;
   width: 100%;
-  z-index: 6;
-  margin-top: 40px;
-  background-color: #fff;
+  margin-top: 55px;
   color: #ffff;
   -webkit-box-shadow: 0 1px 13px 0 #e6e6e6;
           box-shadow: 0 1px 13px 0 #e6e6e6;
@@ -517,6 +521,7 @@ body {
 }
 
 .menu__titles--fixed .menu__title {
+  margin: 0 10px;
   height: 0;
   padding: 15px 10px 20px 10px;
   border-radius: 20px;

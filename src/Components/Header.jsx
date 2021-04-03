@@ -12,8 +12,10 @@ function Header({
   fixed,
   searchValue,
   openSearch,
+  closeSearch,
   isSearchOpened,
 }) {
+  const heightOfWindow = window.innerHeight;
   const handleClick = () => {
     scroll.scrollToTop();
   };
@@ -30,11 +32,13 @@ function Header({
       </p>
       <div className="header__input">
         <input
+          onBlur={() => closeSearch()}
+          onClick={() => openSearch()}
           placeholder="Search"
           value={searchValue}
           onChange={(e) => {
             setSearchValue(e.target.value);
-            scroll.scrollToTop();
+            scroll.scrollTo(143);
           }}
           spellCheck={false}
           className={`${isSearchOpened ? "opened" : "closed"} ${

@@ -71,7 +71,7 @@ const Layout = ({
 
   useEffect(() => {
     const handleScroll = (e) => {
-      if (getWindowScrollTop() >= 143) {
+      if (getWindowScrollTop() >= 144) {
         setFixed(true);
       } else {
         setFixed(false);
@@ -87,11 +87,7 @@ const Layout = ({
   }, []);
 
   const openSearch = () => {
-    if (isSearchOpened) {
-      setIsSearchOpened(false);
-    } else {
-      setIsSearchOpened(true);
-    }
+    setIsSearchOpened(true);
   };
 
   return (
@@ -106,6 +102,7 @@ const Layout = ({
         fixed={fixed}
         searchValue={searchValue}
         openSearch={() => openSearch()}
+        closeSearch={() => setIsSearchOpened(false)}
       />
       <MenuTitle
         menuTitles={menuTitles}
