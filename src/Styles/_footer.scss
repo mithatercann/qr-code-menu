@@ -11,3 +11,36 @@
   text-align: center;
   color: rgb(149, 149, 149);
 }
+
+.notfound {
+  height: 100%;
+  padding: 0 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 100%;
+  }
+  h1 {
+    font-family: abeja;
+    color: #4b8dd3;
+  }
+  p {
+    margin: 20px 0 30px 0;
+    color: gray;
+  }
+  a {
+    text-decoration: none;
+    border: none;
+    outline: none;
+    padding: 10px 30px;
+    color: #fff;
+    border-radius: 20px;
+    background: #56ccf2;
+    box-shadow: 0 0 25px 1px rgba(0, 0, 0, 0.075);
+    background: -webkit-linear-gradient(to right, #2f80ed, #56ccf2);
+    background: linear-gradient(to right, #2f80ed, #56ccf2);
+  }
+}

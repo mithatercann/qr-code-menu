@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { FiShoppingCart } from "react-icons/fi";
 import { AiOutlineSearch } from "react-icons/ai";
+import { MdClear } from "react-icons/md";
 import { animateScroll as scroll } from "react-scroll";
 
 function Header({
@@ -20,6 +21,8 @@ function Header({
     scroll.scrollToTop();
   };
 
+  console.log(cartData);
+
   return (
     <header className={`header ${fixed ? "header__fixed" : null}`}>
       <p
@@ -32,13 +35,15 @@ function Header({
       </p>
       <div className="header__input">
         <input
-          onBlur={() => closeSearch()}
-          onClick={() => openSearch()}
+          onFocus={(e) => {
+            openSearch();
+            scroll.scrollToTop();
+            openSearch();
+          }}
           placeholder="Search"
           value={searchValue}
           onChange={(e) => {
             setSearchValue(e.target.value);
-            scroll.scrollTo(143);
           }}
           spellCheck={false}
           className={`${isSearchOpened ? "opened" : "closed"} ${
@@ -46,16 +51,31 @@ function Header({
           }`}
           type="text"
         />
-        <AiOutlineSearch
-          className="header__search"
-          onClick={() => openSearch()}
-          size={26}
-        />
+        {isSearchOpened || isSearchOpenedd ? (
+          <div className="svg">
+            <MdClear
+              onClick={() => {
+                setSearchValue("");
+                if (!searchValue) closeSearch();
+              }}
+              size={30}
+            />
+          </div>
+        ) : (
+          <div className="svg">
+            <AiOutlineSearch className="header__search" size={26} />
+          </div>
+        )}
       </div>
-      <span onClick={() => openCart()} className="header__cart">
+      <span
+        onClick={() => {
+          openCart();
+        }}
+        className="header__cart"
+      >
         <div className="header__cart--inner">
           <FiShoppingCart size={24} />
-          <i>{cartData.length}</i>
+          <i>{cartData ? cartData.length : 0}</i>
         </div>
       </span>
     </header>

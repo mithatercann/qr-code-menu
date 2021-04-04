@@ -9,11 +9,25 @@ const MenuTitle = ({
   fixed,
   clearSearchValue,
   closeSearch,
+  title,
 }) => {
-  const [selected, setSelected] = useState("");
+  const [selected, setSelected] = useState(title);
 
-  const scrollTop = () => {
+  const scrollTop = (e) => {
     scroll.scrollToTop();
+    e.target.scrollIntoView({
+      behavior: "smooth",
+      block: "end",
+      inline: "center",
+    });
+  };
+
+  const centerItems = (e) => {
+    e.target.scrollIntoView({
+      behavior: "smooth",
+      block: "end",
+      inline: "center",
+    });
   };
 
   const checkScrollTop = (item) => {
@@ -23,23 +37,29 @@ const MenuTitle = ({
         document.body.scrollTop === 0
       ) {
         callMenuList(item);
+        document.querySelector(".menu__title--selected").scrollIntoView({
+          behavior: "smooth",
+          block: "end",
+          inline: "center",
+        });
         clearInterval(interval);
       }
     }, 10);
   };
 
+  useEffect(() => {
+    setSelected(menuTitles[0]);
+  }, [menuTitles]);
+
   return (
-    <section
-      className={`menu__titles ${
-        fixed ? "menu__titles--fixed" : "menu__titles--normal"
-      }`}
-    >
+    <section className={`menu__titles ${fixed ? "menu__titles--fixed" : null}`}>
       {menuTitles.map((item) => (
         <div
           onClick={(e) => {
             checkScrollTop(item);
             setSelected(item);
-            scrollTop();
+            centerItems(e);
+            scrollTop(e);
             clearSearchValue();
             closeSearch();
           }}
@@ -58,21 +78,6 @@ const MenuTitle = ({
           <small>{item}</small>
         </div>
       ))}
-      {/* <div className="menu__titles--fixed">
-        {menuTitles.map((item) => (
-          <small
-            onClick={(e) => {
-              checkScrollTop(item);
-              setSelected(item);
-              scrollTop();
-              clearSearchValue();
-              closeSearch();
-            }}
-          >
-            {item}
-          </small>
-        ))}
-      </div> */}
     </section>
   );
 };

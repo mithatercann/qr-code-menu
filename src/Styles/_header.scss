@@ -34,6 +34,13 @@
     flex: 7;
     margin-right: -10px;
     z-index: 3;
+    .svg {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: 55px;
+      height: 100%;
+    }
     input {
       font-size: 14px;
       border: none;
@@ -42,13 +49,14 @@
       outline: none;
       width: 20px;
       height: 30px;
-      margin-right: -23px;
+      margin-right: -53px;
       z-index: 2;
       color: gray;
       transition: 0.2s;
       opacity: 0;
     }
   }
+
   .opened {
     opacity: 1;
     width: 90%;

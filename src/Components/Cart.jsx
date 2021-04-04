@@ -1,5 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { IoCloseOutline } from "react-icons/io5";
+import { IoIosArrowBack } from "react-icons/io";
+import { AiOutlineDelete } from "react-icons/ai";
+
 import getSymbolFromCurrency from "currency-symbol-map";
 
 function Cart({
@@ -9,28 +12,33 @@ function Cart({
   closeCart,
   location,
   restaurantName,
+  clearCart,
 }) {
+  const [cartLength, setCartLength] = useState();
+
   useEffect(() => {
-    if (cartData.length === 0) {
-      closeCart();
+    if (cartData) {
+      if (cartData.length === 0) {
+        closeCart();
+      }
     }
   }, [cartData]);
 
   return (
     <div className={`cart ${isCartOpened}`}>
       <nav>
-        <span>{restaurantName}</span>
-        <div
+        <IoIosArrowBack size={24} onClick={() => closeCart()} />
+
+        <AiOutlineDelete
           className="close"
           onClick={() => {
-            closeCart();
+            clearCart();
           }}
-        >
-          <IoCloseOutline size={30} />
-        </div>
+          size={24}
+        />
       </nav>
       <div className="break"></div>
-      {cartData.length === 0 ? (
+      {!cartData || cartData.length === 0 ? (
         <div className="cart__info">
           <div>
             <img src="/app-image/empty-cart.jpg" alt="empty-cart" />
@@ -64,7 +72,6 @@ function Cart({
                   </div>
                 </div>
               </div>
-              <div className="cart__item--delete--filter"></div>
             </div>
           ))}
         </div>

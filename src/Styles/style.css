@@ -16,14 +16,19 @@
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-img {
-  display: block;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   overflow: visible;
   overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+img {
+  display: block;
 }
 
 .header {
@@ -89,6 +94,20 @@ body {
   z-index: 3;
 }
 
+.header__input .svg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 55px;
+  height: 100%;
+}
+
 .header__input input {
   font-size: 14px;
   border: none;
@@ -97,7 +116,7 @@ body {
   outline: none;
   width: 20px;
   height: 30px;
-  margin-right: -23px;
+  margin-right: -53px;
   z-index: 2;
   color: gray;
   -webkit-transition: 0.2s;
@@ -474,22 +493,30 @@ body {
 }
 
 .menu__titles {
-  z-index: 5;
-  padding: 20px 0;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  -ms-overflow-style: none;
+  -webkit-overflow-style: none;
+  -webkit-overflow-scrolling: touch;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  overflow-x: scroll;
+  width: 100%;
+  z-index: 5;
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
   margin-top: 70px;
   background-color: #fff;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  -ms-overflow-style: none;
-  -webkit-overflow-style: none;
-  -webkit-overflow-scrolling: touch;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .menu__titles small {
@@ -507,8 +534,6 @@ body {
   height: 70px;
   padding-top: 20px;
   position: fixed;
-  overflow-x: scroll;
-  overflow-y: hidden;
   width: 100%;
   margin-top: 55px;
   color: #ffff;
@@ -589,8 +614,7 @@ body {
   top: 0;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-  background-color: white;
-  color: white;
+  background-color: #ffff;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
@@ -604,7 +628,7 @@ body {
   left: 0;
   width: 100%;
   height: 70px;
-  padding: 0 0 0 20px;
+  padding: 0 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -618,10 +642,6 @@ body {
           justify-content: space-between;
   -webkit-box-shadow: 0 1px 13px 0 #e6e6e6;
           box-shadow: 0 1px 13px 0 #e6e6e6;
-}
-
-.cart nav .close {
-  padding: 15px;
 }
 
 .cart .break {
@@ -748,30 +768,6 @@ body {
   background-color: rgba(0, 0, 0, 0.048);
 }
 
-.cart__footer {
-  font-size: 13px;
-  position: fixed;
-  padding: 10px;
-  bottom: 0;
-  width: 100%;
-  border-top: 1px dashed #bebebe;
-  color: black;
-}
-
-.cart__footer--item {
-  color: gray;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 10px 0;
-}
-
 .opened {
   -webkit-transform: translateX(0);
           transform: translateX(0);
@@ -789,5 +785,52 @@ body {
   padding: 15px 0;
   text-align: center;
   color: #959595;
+}
+
+.notfound {
+  height: 100%;
+  padding: 0 20px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.notfound img {
+  width: 100%;
+}
+
+.notfound h1 {
+  font-family: abeja;
+  color: #4b8dd3;
+}
+
+.notfound p {
+  margin: 20px 0 30px 0;
+  color: gray;
+}
+
+.notfound a {
+  text-decoration: none;
+  border: none;
+  outline: none;
+  padding: 10px 30px;
+  color: #fff;
+  border-radius: 20px;
+  background: #56ccf2;
+  -webkit-box-shadow: 0 0 25px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: 0 0 25px 1px rgba(0, 0, 0, 0.075);
+  background: -webkit-gradient(linear, left top, right top, from(#2f80ed), to(#56ccf2));
+  background: linear-gradient(to right, #2f80ed, #56ccf2);
 }
 /*# sourceMappingURL=style.css.map */

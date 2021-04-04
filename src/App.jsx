@@ -33,7 +33,9 @@ function App() {
       setCart([...cart, data]);
     }
   };
-
+  const clearCart = () => {
+    setCart([]);
+  };
   const closeInfo = () => {
     setIsInfoOpened(false);
   };
@@ -84,11 +86,19 @@ function App() {
       );
 
       setTitle(initialMenuList[0].TYPE);
+
       setCurrency(initialMenuList[0].CURRENCY);
       setMenuList(initialMenuList);
     };
     fetchData();
+
+    var localData = JSON.parse(localStorage.getItem("cart"));
+    setCart(localData);
   }, []);
+
+  useEffect(() => {
+    localStorage.setItem("cart", JSON.stringify(cart));
+  }, [cart]);
 
   return (
     <Layout
@@ -112,6 +122,7 @@ function App() {
       openCartInfo={(item) => openCartInfo(item)}
       closeCartInfo={() => closeCartInfo()}
       fullData={data}
+      clearCart={() => clearCart()}
     />
   );
 }

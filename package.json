@@ -20,6 +20,7 @@
     "react-scroll": "^1.8.0",
     "react-scroll-lock-component": "^1.2.0",
     "react-scrolllock": "^5.0.1",
+    "react-select": "^4.3.0",
     "react-slidedown": "^2.4.5",
     "react-sticky-box": "^0.9.3",
     "scroll-lock": "^2.1.5",

@@ -1,8 +1,15 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Route,
+  Switch,
+  Link,
+  Redirect,
+} from "react-router-dom";
 import { v4 as uuid } from "uuid";
 import App from "./App";
-
+import NotFound from "./Pages/NotFound";
+import Home from "./Pages/Home";
 const Routers = () => {
   const [customers, setCustomers] = useState([]);
   const CUSTOMER_API = "./customers.json";
@@ -22,11 +29,19 @@ const Routers = () => {
 
   return (
     <Router>
-      {customers.map((customer) => (
-        <Route key={uuid()} path={`/${customer.name}`}>
-          <App />
+      <Switch>
+        {customers.map((customer) => (
+          <Route key={uuid()} exact path={`/${customer.name}`}>
+            <App />
+          </Route>
+        ))}
+        <Route exact path="/" exact={true}>
+          <Home />
         </Route>
-      ))}
+        <Route path="*" exact={true}>
+          <NotFound />
+        </Route>
+      </Switch>
     </Router>
   );
 };

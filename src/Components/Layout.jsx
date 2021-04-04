@@ -30,11 +30,12 @@ const Layout = ({
   openInfo,
   openCartInfo,
   fullData,
+  clearCart,
 }) => {
   const [isCartOpened, setIsCartOpened] = useState("closed");
   const [style, setStyle] = useState({});
   const [fixed, setFixed] = useState(false);
-  const [searchOpened, setSearchOpened] = useState(true);
+  const [searchOpened, setSearchOpened] = useState(false);
   const [searchValue, setSearchValue] = useState("");
   const [isSearchOpened, setIsSearchOpened] = useState(false);
 
@@ -105,6 +106,7 @@ const Layout = ({
         closeSearch={() => setIsSearchOpened(false)}
       />
       <MenuTitle
+        title={title}
         menuTitles={menuTitles}
         callMenuList={(titleProp) => callMenuList(titleProp)}
         location={location}
@@ -130,6 +132,7 @@ const Layout = ({
         closeCart={() => closeCart()}
         location={location}
         restaurantName={restaurantName}
+        clearCart={() => clearCart()}
       />
       <MoreInfo
         closeInfo={() => closeInfo()}

@@ -31,12 +31,21 @@ const MenuList = ({
         .includes(searchValue.toLowerCase().split(" ").join(""))
     );
     setSearchData([...dataForName, ...dataForDescription]);
-    // setSearchDataLength(data.length);
-    // console.log(data.length);
   }, [searchValue]);
 
+  const handleTouchStart = () => {
+    document.querySelector(".menu__title--selected").scrollIntoView({
+      behavior: "smooth",
+      inline: "center",
+    });
+  };
+
   return (
-    <section style={style} className={`menu__list`}>
+    <section
+      onTouchStart={() => handleTouchStart()}
+      style={style}
+      className={`menu__list`}
+    >
       {fixed ? (
         <div>
           <div className="break"></div>
