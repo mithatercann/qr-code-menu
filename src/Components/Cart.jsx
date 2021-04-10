@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
-import { IoCloseOutline } from "react-icons/io5";
-import { IoIosArrowBack } from "react-icons/io";
-import { AiOutlineDelete } from "react-icons/ai";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
+import { AiOutlineClear } from "react-icons/ai";
+import { animateScroll as scroll } from "react-scroll";
+import { disablePageScroll, enablePageScroll } from "scroll-lock";
 
 import getSymbolFromCurrency from "currency-symbol-map";
 
@@ -13,6 +14,7 @@ function Cart({
   location,
   restaurantName,
   clearCart,
+  setWarning,
 }) {
   const [cartLength, setCartLength] = useState();
 
@@ -27,14 +29,17 @@ function Cart({
   return (
     <div className={`cart ${isCartOpened}`}>
       <nav>
-        <IoIosArrowBack size={24} onClick={() => closeCart()} />
-
-        <AiOutlineDelete
-          className="close"
+        <IoIosArrowBack size={26} onClick={() => closeCart()} />
+        <AiOutlineClear
           onClick={() => {
-            clearCart();
+            if (cartData.length !== 0) {
+              disablePageScroll();
+              setWarning(true);
+            }
+            scroll.scrollToTop();
           }}
-          size={24}
+          className="delete"
+          size={26}
         />
       </nav>
       <div className="break"></div>
@@ -71,6 +76,7 @@ function Cart({
                     {getSymbolFromCurrency(item.CURRENCY)} {item.PRICE}{" "}
                   </div>
                 </div>
+                <IoIosArrowForward size={30} />
               </div>
             </div>
           ))}

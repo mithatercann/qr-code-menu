@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@egjs/react-flicking": "^3.7.0",
     "@testing-library/jest-dom": "^5.11.9",
     "@testing-library/react": "^11.2.5",
     "@testing-library/user-event": "^12.7.1",
@@ -21,9 +22,12 @@
     "react-scroll-lock-component": "^1.2.0",
     "react-scrolllock": "^5.0.1",
     "react-select": "^4.3.0",
+    "react-slick": "^0.28.1",
     "react-slidedown": "^2.4.5",
     "react-sticky-box": "^0.9.3",
     "scroll-lock": "^2.1.5",
+    "slick-carousel": "^1.8.1",
+    "smoothscroll-polyfill": "^0.4.4",
     "uuid": "^8.3.2",
     "web-vitals": "^1.1.0"
   },

@@ -72,7 +72,7 @@ function App() {
       const response = await fetch(API);
       const responseData = await response.json();
       setData(responseData);
-      console.log(responseData);
+      //console.log(responseData);
 
       // Filtering menu types
       responseData.map((item) => titles.push(item.TYPE));
@@ -93,11 +93,11 @@ function App() {
     fetchData();
 
     var localData = JSON.parse(localStorage.getItem("cart"));
-    setCart(localData);
+    if (localData) setCart(localData);
   }, []);
 
   useEffect(() => {
-    localStorage.setItem("cart", JSON.stringify(cart));
+    if (cart) localStorage.setItem("cart", JSON.stringify(cart));
   }, [cart]);
 
   return (

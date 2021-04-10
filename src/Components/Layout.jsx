@@ -8,6 +8,7 @@ import MenuList from "./MenuList";
 import Cart from "./Cart";
 import MoreInfo from "./MoreInfo";
 import MoreInfoCart from "./MoreInfoCart";
+import Popup from "./Popup";
 import Footer from "./Footer";
 
 const Layout = ({
@@ -38,7 +39,7 @@ const Layout = ({
   const [searchOpened, setSearchOpened] = useState(false);
   const [searchValue, setSearchValue] = useState("");
   const [isSearchOpened, setIsSearchOpened] = useState(false);
-
+  const [warning, setWarning] = useState(false);
   const openCart = () => {
     setIsCartOpened("opened");
     setTimeout(() => {
@@ -133,6 +134,7 @@ const Layout = ({
         location={location}
         restaurantName={restaurantName}
         clearCart={() => clearCart()}
+        setWarning={(prop) => setWarning(prop)}
       />
       <MoreInfo
         closeInfo={() => closeInfo()}
@@ -148,6 +150,11 @@ const Layout = ({
         location={location}
         addToCart={(item, quantity) => addToCart(item, quantity)}
         removeFromCart={(itemCode) => removeFromCart(itemCode)}
+      />
+      <Popup
+        setWarning={(prop) => setWarning(prop)}
+        warning={warning}
+        clearCart={() => clearCart()}
       />
       <Footer />
     </div>

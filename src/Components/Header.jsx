@@ -56,7 +56,7 @@ function Header({
             <MdClear
               onClick={() => {
                 setSearchValue("");
-                if (!searchValue) closeSearch();
+                closeSearch();
               }}
               size={30}
             />

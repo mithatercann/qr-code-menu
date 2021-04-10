@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { animateScroll as scroll } from "react-scroll";
-import getWindowScrollTop from "get-window-scroll-top";
-
+import smoothscroll from "smoothscroll-polyfill";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 const MenuTitle = ({
   menuTitles,
   callMenuList,
@@ -15,18 +17,13 @@ const MenuTitle = ({
 
   const scrollTop = (e) => {
     scroll.scrollToTop();
-    e.target.scrollIntoView({
-      behavior: "smooth",
-      block: "end",
-      inline: "center",
-    });
   };
 
   const centerItems = (e) => {
     e.target.scrollIntoView({
       behavior: "smooth",
-      block: "end",
       inline: "center",
+      block: "center",
     });
   };
 
@@ -37,16 +34,14 @@ const MenuTitle = ({
         document.body.scrollTop === 0
       ) {
         callMenuList(item);
-        document.querySelector(".menu__title--selected").scrollIntoView({
-          behavior: "smooth",
-          block: "end",
-          inline: "center",
-        });
+
         clearInterval(interval);
       }
     }, 10);
   };
-
+  if (fixed) {
+    smoothscroll.polyfill();
+  }
   useEffect(() => {
     setSelected(menuTitles[0]);
   }, [menuTitles]);
@@ -58,7 +53,7 @@ const MenuTitle = ({
           onClick={(e) => {
             checkScrollTop(item);
             setSelected(item);
-            centerItems(e);
+            if (fixed) centerItems(e);
             scrollTop(e);
             clearSearchValue();
             closeSearch();

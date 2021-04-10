@@ -34,10 +34,13 @@ const MenuList = ({
   }, [searchValue]);
 
   const handleTouchStart = () => {
-    document.querySelector(".menu__title--selected").scrollIntoView({
-      behavior: "smooth",
-      inline: "center",
-    });
+    if (fixed) {
+      document.querySelector(".menu__title--selected").scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+        inline: "center",
+      });
+    }
   };
 
   return (
