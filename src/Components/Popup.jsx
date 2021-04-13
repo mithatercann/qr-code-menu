@@ -1,6 +1,6 @@
 import React from "react";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
-import { CgDanger } from "react-icons/cg";
+import { BiTrash } from "react-icons/bi";
 function Popup({ warning, setWarning, clearCart }) {
   return (
     <div>
@@ -14,8 +14,9 @@ function Popup({ warning, setWarning, clearCart }) {
         }`}
       ></div>
       <div className={`cart__popup ${warning && "cart__popup--opened"}`}>
-        <CgDanger size={70} />
-        <p>Do you want to clear the cart?</p>
+        <BiTrash size={70} />
+        <h3>Do you want to clear the cart?</h3>
+
         <div className="cart__popup--btns">
           <button
             onClick={() => {

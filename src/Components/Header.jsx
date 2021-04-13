@@ -21,7 +21,9 @@ function Header({
     scroll.scrollToTop();
   };
 
-  console.log(cartData);
+  const test = (e) => {
+    window.scrollTo(0, 0);
+  };
 
   return (
     <header className={`header ${fixed ? "header__fixed" : null}`}>
@@ -37,13 +39,13 @@ function Header({
         <input
           onFocus={(e) => {
             openSearch();
-            scroll.scrollToTop();
-            openSearch();
+            test(e);
           }}
           placeholder="Search"
           value={searchValue}
           onChange={(e) => {
             setSearchValue(e.target.value);
+            test(e);
           }}
           spellCheck={false}
           className={`${isSearchOpened ? "opened" : "closed"} ${

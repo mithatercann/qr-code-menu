@@ -17,7 +17,7 @@ function Cart({
   setWarning,
 }) {
   const [cartLength, setCartLength] = useState();
-
+  const w = window.innerWidth;
   useEffect(() => {
     if (cartData) {
       if (cartData.length === 0) {
@@ -30,6 +30,7 @@ function Cart({
     <div className={`cart ${isCartOpened}`}>
       <nav>
         <IoIosArrowBack size={26} onClick={() => closeCart()} />
+        <p>SEPET</p>
         <AiOutlineClear
           onClick={() => {
             if (cartData.length !== 0) {
@@ -71,12 +72,20 @@ function Cart({
                 />
                 <div className="cart__item--details">
                   <span>{item.NAME}</span>
-                  <p>{item.DESCRIPTION.split("").splice(0, 60).join("")}...</p>
+                  {w < 331 ? (
+                    <p>
+                      {item.DESCRIPTION.split("").splice(0, 35).join("")}...
+                    </p>
+                  ) : (
+                    <p>
+                      {item.DESCRIPTION.split("").splice(0, 60).join("")}...
+                    </p>
+                  )}
                   <div className="cart__item--price">
                     {getSymbolFromCurrency(item.CURRENCY)} {item.PRICE}{" "}
                   </div>
                 </div>
-                <IoIosArrowForward size={30} />
+                <IoIosArrowForward size={22} />
               </div>
             </div>
           ))}

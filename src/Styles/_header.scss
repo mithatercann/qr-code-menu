@@ -17,7 +17,8 @@
   }
   &__logo {
     font-family: abeja;
-    color: rgb(107, 107, 107);
+    color: #708090;
+
     z-index: 200;
     flex: 1;
     padding: 0 20px;
@@ -30,7 +31,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    color: rgb(153, 153, 153);
+    color: #708090;
     flex: 7;
     margin-right: -20px;
     z-index: 3;
@@ -75,7 +76,7 @@
       position: relative;
     }
     svg {
-      color: rgb(158, 158, 158);
+      color: #708090;
     }
     i {
       position: absolute;

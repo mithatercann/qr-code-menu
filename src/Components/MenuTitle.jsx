@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { animateScroll as scroll } from "react-scroll";
 import smoothscroll from "smoothscroll-polyfill";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+
 const MenuTitle = ({
   menuTitles,
   callMenuList,
