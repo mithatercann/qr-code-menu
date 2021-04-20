@@ -31,16 +31,14 @@ const Routers = () => {
     <Router>
       <Switch>
         {customers.map((customer) => (
-          <Route key={uuid()} exact path={`/${customer.name}`}>
-            <App />
+          <Route exact path={`/${customer.name}`}>
+            <App languages={customer.languages} />
           </Route>
         ))}
-        <Route exact path="/" exact={true}>
+        <Route exact path="/">
           <Home />
         </Route>
-        <Route path="*" exact={true}>
-          <NotFound />
-        </Route>
+        <Route component={NotFound} />
       </Switch>
     </Router>
   );

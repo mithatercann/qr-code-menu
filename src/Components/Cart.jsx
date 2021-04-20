@@ -71,7 +71,11 @@ function Cart({
                   alt={"image"}
                 />
                 <div className="cart__item--details">
-                  <span>{item.NAME}</span>
+                  <span>
+                    {" "}
+                    {item.NAME.split("").splice(0, 15).join("")}
+                    {item.NAME.length < 17 ? "" : "..."}
+                  </span>
                   {w < 331 ? (
                     <p>
                       {item.DESCRIPTION.split("").splice(0, 35).join("")}...

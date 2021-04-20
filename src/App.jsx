@@ -1,20 +1,22 @@
 import React, { useState, useEffect } from "react";
 import Layout from "./Components/Layout";
+import Intro from "./Components/Intro";
 import { BrowserRouter as Router, useLocation, Route } from "react-router-dom";
 
-function App() {
+function App({ languages }) {
   const location = useLocation();
   const [data, setData] = useState([]);
   const [menuTitle, setMenuTitle] = useState([]);
   const [title, setTitle] = useState("");
   const [currency, setCurrency] = useState("");
+  const [language, setLanguage] = useState(languages[0].language);
   const [menuList, setMenuList] = useState([]);
   const [cart, setCart] = useState([]);
   const [info, setInfo] = useState([]);
   const [cartInfo, setCartInfo] = useState([]);
   const [isInfoOpened, setIsInfoOpened] = useState(false);
   const [isCartInfoOpened, setIsCartInfoOpened] = useState(false);
-  const API = `./database${location.pathname}/db.json`;
+  const API = `./database${location.pathname}/${language}/db.json`;
 
   const restaurantName = location.pathname
     .split("")
@@ -67,12 +69,17 @@ function App() {
   };
 
   useEffect(() => {
+    var localData = JSON.parse(localStorage.getItem("cart"));
+    if (localData) setCart(localData);
+  }, []);
+
+  useEffect(() => {
+    console.log("adassdsad");
     const titles = [];
     const fetchData = async () => {
       const response = await fetch(API);
       const responseData = await response.json();
       setData(responseData);
-      //console.log(responseData);
 
       // Filtering menu types
       responseData.map((item) => titles.push(item.TYPE));
@@ -91,39 +98,42 @@ function App() {
       setMenuList(initialMenuList);
     };
     fetchData();
-
-    var localData = JSON.parse(localStorage.getItem("cart"));
-    if (localData) setCart(localData);
-  }, []);
+  }, [language]);
 
   useEffect(() => {
     if (cart) localStorage.setItem("cart", JSON.stringify(cart));
   }, [cart]);
 
   return (
-    <Layout
-      menuTitles={menuTitle}
-      menuList={menuList}
-      data={data}
-      callMenuList={(titleProp) => callMenuList(titleProp)}
-      addToCart={(data, quantity) => addToCart(data, quantity)}
-      removeFromCart={(itemCode) => removeFromCart(itemCode)}
-      cartData={cart}
-      title={title}
-      currency={currency}
-      location={location.pathname}
-      restaurantName={restaurantName}
-      info={info}
-      cartInfo={cartInfo}
-      isInfoOpened={isInfoOpened}
-      isCartInfoOpened={isCartInfoOpened}
-      closeInfo={() => closeInfo()}
-      openInfo={(item) => openInfo(item)}
-      openCartInfo={(item) => openCartInfo(item)}
-      closeCartInfo={() => closeCartInfo()}
-      fullData={data}
-      clearCart={() => clearCart()}
-    />
+    <>
+      <Intro
+        setLanguage={(language) => setLanguage(language)}
+        languages={languages}
+      />
+      <Layout
+        menuTitles={menuTitle}
+        menuList={menuList}
+        data={data}
+        callMenuList={(titleProp) => callMenuList(titleProp)}
+        addToCart={(data, quantity) => addToCart(data, quantity)}
+        removeFromCart={(itemCode) => removeFromCart(itemCode)}
+        cartData={cart}
+        title={title}
+        currency={currency}
+        location={location.pathname}
+        restaurantName={restaurantName}
+        info={info}
+        cartInfo={cartInfo}
+        isInfoOpened={isInfoOpened}
+        isCartInfoOpened={isCartInfoOpened}
+        closeInfo={() => closeInfo()}
+        openInfo={(item) => openInfo(item)}
+        openCartInfo={(item) => openCartInfo(item)}
+        closeCartInfo={() => closeCartInfo()}
+        fullData={data}
+        clearCart={() => clearCart()}
+      />
+    </>
   );
 }
 

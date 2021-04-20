@@ -37,9 +37,9 @@ const MenuTitle = ({
       }
     }, 10);
   };
-  if (fixed) {
-    smoothscroll.polyfill();
-  }
+  // if (fixed) {
+  //   smoothscroll.polyfill();
+  // }
   useEffect(() => {
     setSelected(menuTitles[0]);
   }, [menuTitles]);
@@ -51,6 +51,7 @@ const MenuTitle = ({
           onClick={(e) => {
             checkScrollTop(item);
             setSelected(item);
+            centerItems(e);
             if (fixed) centerItems(e);
             scrollTop(e);
             clearSearchValue();
@@ -68,7 +69,9 @@ const MenuTitle = ({
             }}
             className="menu__title--img"
           ></div>
+
           <small>{item}</small>
+          <span className="menu__title--bg"></span>
         </div>
       ))}
     </section>

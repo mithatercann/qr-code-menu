@@ -75,6 +75,7 @@
     &--details {
       margin-left: 15px;
       width: 100%;
+
       span {
         font-size: 15px;
         font-weight: 500;
@@ -84,6 +85,10 @@
         font-size: 13px;
         color: rgb(116, 116, 116);
         width: 90%;
+        height: 50px;
+        @media screen and (max-width: 330px) {
+          height: 40px;
+        }
       }
     }
     &--img {
@@ -147,7 +152,16 @@
   flex-direction: column;
   padding: 0 10px;
   text-align: center;
-
+  background-size: 100%;
+  &__bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    opacity: 0.4;
+  }
   &__container {
     display: flex;
     align-items: center;

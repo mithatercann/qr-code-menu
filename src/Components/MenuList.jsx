@@ -86,7 +86,10 @@ const MenuList = ({
                         alt={"image"}
                       />
                       <div className="menu__list--top--left">
-                        <span className="menu__list--name"> {item.NAME}</span>
+                        <span className="menu__list--name">
+                          {item.NAME.split("").splice(0, 15).join("")}
+                          {item.NAME.length < 17 ? "" : "..."}
+                        </span>
                         <div className="menu__list--desc">
                           {w < 330 || item.NAME.length > 16 ? (
                             <p>
@@ -142,7 +145,10 @@ const MenuList = ({
                   alt={"image"}
                 />
                 <div className="menu__list--top--left">
-                  <span className="menu__list--name"> {item.NAME}</span>
+                  <span className="menu__list--name">
+                    {item.NAME.split("").splice(0, 15).join("")}
+                    {item.NAME.length < 17 ? "" : "..."}
+                  </span>
                   <div className="menu__list--desc">
                     {w < 330 || item.NAME.length > 16 ? (
                       <p>

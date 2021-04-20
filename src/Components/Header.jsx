@@ -41,6 +41,9 @@ function Header({
             openSearch();
             test(e);
           }}
+          onBlur={() => {
+            if (!searchValue) closeSearch();
+          }}
           placeholder="Search"
           value={searchValue}
           onChange={(e) => {
