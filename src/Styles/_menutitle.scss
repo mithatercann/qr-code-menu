@@ -26,11 +26,10 @@
     }
   }
   &--fixed {
-    height: 70px;
-    padding-top: 20px;
+    height: 60px;
     position: fixed;
     width: 100%;
-    margin-top: 55px;
+    margin-top: 65px;
     color: #ffff;
     box-shadow: 0 1px 13px 0 rgb(230, 230, 230);
     background-color: #fff;
@@ -71,7 +70,7 @@
   &--selected {
     position: relative;
     background: #fff;
-    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.068);
+    box-shadow: 0 0 13px 0 rgba(41, 41, 41, 0.096);
     padding: 10px;
     border-radius: 20px;
 

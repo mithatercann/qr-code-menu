@@ -39,6 +39,7 @@ const MenuList = ({
       document.querySelector(".menu__title--selected").scrollIntoView({
         behavior: "smooth",
         inline: "center",
+        block: "center",
       });
     }
   };
@@ -63,65 +64,63 @@ const MenuList = ({
       )}
       {searchValue ? (
         <div>
-          {!searchDataLength === 0
-            ? null
-            : searchData.map((item) => (
-                <div
-                  onClick={(e) => {
-                    openInfo(item);
-                  }}
-                  className="menu__list--item"
-                >
-                  <span className="menu__list--detail">
-                    <div className="menu__list--top">
-                      <img
-                        className={"menu__list--img"}
-                        src={`/images${location}/${
-                          item.PIC == "true" ? "pics" : "categories"
-                        }/${
-                          item.PIC == "true"
-                            ? item.NAME.split(" ").join("_")
-                            : item.TYPE.split(" ").join("_")
-                        }.jpg`}
-                        alt={"image"}
-                      />
-                      <div className="menu__list--top--left">
-                        <span className="menu__list--name">
-                          {item.NAME.split("").splice(0, 15).join("")}
-                          {item.NAME.length < 17 ? "" : "..."}
-                        </span>
-                        <div className="menu__list--desc">
-                          {w < 330 || item.NAME.length > 16 ? (
-                            <p>
-                              {item.DESCRIPTION.split("")
-                                .splice(0, 35)
-                                .join("")}
-                              ...
-                            </p>
-                          ) : (
-                            <p>
-                              {item.DESCRIPTION.split("")
-                                .splice(0, 50)
-                                .join("")}
-                              ...
-                            </p>
-                          )}
+          {!searchDataLength === 1 ? (
+            <p>hey</p>
+          ) : (
+            searchData.map((item) => (
+              <div
+                onClick={(e) => {
+                  openInfo(item);
+                }}
+                className="menu__list--item"
+              >
+                <span className="menu__list--detail">
+                  <div className="menu__list--top">
+                    <img
+                      className={"menu__list--img"}
+                      src={`/images${location}/${
+                        item.PIC == "true" ? "pics" : "categories"
+                      }/${
+                        item.PIC == "true"
+                          ? item.NAME.split(" ").join("_")
+                          : item.TYPE.split(" ").join("_")
+                      }.jpg`}
+                      alt={"image"}
+                    />
+                    <div className="menu__list--top--left">
+                      <span className="menu__list--name">
+                        {item.NAME.split("").splice(0, 15).join("")}
+                        {item.NAME.length < 17 ? "" : "..."}
+                      </span>
+                      <div className="menu__list--desc">
+                        {w < 330 || item.NAME.length > 16 ? (
+                          <p>
+                            {item.DESCRIPTION.split("").splice(0, 35).join("")}
+                            ...
+                          </p>
+                        ) : (
+                          <p>
+                            {item.DESCRIPTION.split("").splice(0, 50).join("")}
+                            ...
+                          </p>
+                        )}
+                      </div>
+                      <div className="menu__list--bottom">
+                        <div className="menu__list--price">
+                          {getSymbolFromCurrency(item.CURRENCY)} {item.PRICE}
                         </div>
-                        <div className="menu__list--bottom">
-                          <div className="menu__list--price">
-                            {getSymbolFromCurrency(item.CURRENCY)} {item.PRICE}
-                          </div>
-                          <div className="menu__list-duration">
-                            <AiOutlineFieldTime size={20} />
-                            {item.DURATION} min
-                          </div>
+                        <div className="menu__list-duration">
+                          <AiOutlineFieldTime size={20} />
+                          {item.DURATION} min
                         </div>
                       </div>
-                      <IoIosArrowForward size={13} />
                     </div>
-                  </span>
-                </div>
-              ))}
+                    <IoIosArrowForward size={13} />
+                  </div>
+                </span>
+              </div>
+            ))
+          )}
         </div>
       ) : (
         menuList.map((item) => (

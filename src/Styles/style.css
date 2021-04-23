@@ -201,8 +201,8 @@ img {
 }
 
 .menu__list--item {
-  -webkit-box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.068);
-          box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.068);
+  -webkit-box-shadow: 0 0 13px 0 rgba(41, 41, 41, 0.096);
+          box-shadow: 0 0 13px 0 rgba(41, 41, 41, 0.096);
   border-radius: 15px;
   position: relative;
   overflow-x: hidden;
@@ -271,7 +271,7 @@ img {
   font-size: 14px;
   word-break: break-all;
   width: 90%;
-  color: #808080;
+  color: #8d8d8d;
   margin: 7px 0;
   padding-right: 7px;
   height: 50px;
@@ -308,7 +308,7 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #808080;
+  color: #8d8d8d;
   font-size: 14px;
 }
 
@@ -365,11 +365,10 @@ img {
 }
 
 .menu__titles--fixed {
-  height: 70px;
-  padding-top: 20px;
+  height: 60px;
   position: fixed;
   width: 100%;
-  margin-top: 55px;
+  margin-top: 65px;
   color: #ffff;
   -webkit-box-shadow: 0 1px 13px 0 #e6e6e6;
           box-shadow: 0 1px 13px 0 #e6e6e6;
@@ -426,8 +425,8 @@ img {
 .menu__title--selected {
   position: relative;
   background: #fff;
-  -webkit-box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.068);
-          box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.068);
+  -webkit-box-shadow: 0 0 13px 0 rgba(41, 41, 41, 0.096);
+          box-shadow: 0 0 13px 0 rgba(41, 41, 41, 0.096);
   padding: 10px;
   border-radius: 20px;
 }
@@ -532,8 +531,8 @@ img {
   overflow: hidden;
   color: #252525;
   background-color: #fff;
-  -webkit-box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.068);
-          box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.068);
+  -webkit-box-shadow: 0 0 13px 0 rgba(41, 41, 41, 0.096);
+          box-shadow: 0 0 13px 0 rgba(41, 41, 41, 0.096);
   border-radius: 15px;
   -webkit-transition: 0.2s;
   transition: 0.2s;
@@ -567,7 +566,7 @@ img {
 .cart__item--details p {
   margin: 8px 0;
   font-size: 13px;
-  color: #747474;
+  color: #8d8d8d;
   width: 90%;
   height: 50px;
 }
@@ -794,8 +793,8 @@ img {
   background-size: 100%;
   background: #fff;
   z-index: 2006;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .intro::after {
@@ -927,7 +926,7 @@ img {
   width: fit-content;
   font-size: 15px;
   word-break: break-all;
-  color: #6b6b6b;
+  color: #727272;
   -webkit-hyphens: auto;
       -ms-hyphens: auto;
           hyphens: auto;

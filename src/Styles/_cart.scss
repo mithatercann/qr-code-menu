@@ -59,7 +59,8 @@
     overflow: hidden;
     color: #252525;
     background-color: #fff;
-    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.068);
+    box-shadow: 0 0 13px 0 rgba(41, 41, 41, 0.096);
+
     border-radius: 15px;
     transition: 0.2s;
 
@@ -83,7 +84,8 @@
       p {
         margin: 8px 0;
         font-size: 13px;
-        color: rgb(116, 116, 116);
+        color: #8d8d8d;
+
         width: 90%;
         height: 50px;
         @media screen and (max-width: 330px) {

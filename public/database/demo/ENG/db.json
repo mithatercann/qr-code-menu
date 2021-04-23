@@ -9,7 +9,7 @@
             "TYPE": "SICAK KAHVE",
             "TAX": "0",
             "UNIT": "ADED",
-            "PIC": "true"
+            "PIC": "false"
         },
         {
             "CODE": "M-00002",
@@ -21,7 +21,7 @@
             "TYPE": "SICAK KAHVE",
             "TAX": "0",
             "UNIT": "ADED",
-            "PIC": "true"
+            "PIC": "false"
         },
         {
             "CODE": "M-00003",
@@ -33,7 +33,7 @@
             "TYPE": "SICAK KAHVE",
             "TAX": "0",
             "UNIT": "ADED",
-            "PIC": "true"
+            "PIC": "false"
         },
         {
             "CODE": "M-00004",

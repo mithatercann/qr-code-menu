@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
+import { useLocation } from "react-router-dom";
 
 function Intro({ languages, setLanguage }) {
+  const location = useLocation();
   const [fadeOut, setFadeOut] = useState(false);
   const [style, setStyle] = useState({});
   if (!fadeOut) {
@@ -18,13 +20,13 @@ function Intro({ languages, setLanguage }) {
           display: "none",
         });
       }
-    }, 10);
+    }, 30);
   };
 
   console.log(languages);
   return (
     <div style={style} className={`intro ${fadeOut ? "fadeOut" : null}`}>
-      <img src="/app-image/coffeshop.png" alt="" />
+      <img src={`/images${location.pathname}/logo.png`} alt="" />
       <div className="intro__btns">
         {languages.map((language) => (
           <button
