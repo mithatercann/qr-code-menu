@@ -20,7 +20,6 @@ const Routers = () => {
         .then((resp) => resp.json())
         .then((respData) => {
           setCustomers(respData);
-          console.log(respData);
         });
     };
 

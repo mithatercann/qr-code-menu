@@ -8,6 +8,7 @@ function MoreInfoCart({
   location,
   removeFromCart,
   closeCartInfo,
+  translateData,
 }) {
   const [scrolled, setScrolled] = useState(0);
   const [transition, setTransition] = useState(0);
@@ -113,7 +114,7 @@ function MoreInfoCart({
                   }}
                   className="info__btn info__btn--delete"
                 >
-                  Remove from cart
+                  {translateData.deleteInfo}
                 </button>
               </div>
             </div>

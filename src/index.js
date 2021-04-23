@@ -7,7 +7,17 @@ function Index() {
   const w = window.innerWidth;
   console.log("width = " + w);
 
-  return w >= 450 ? <h1>This app is only for mobile</h1> : <Routers />;
+  return w >= 450 ? (
+    <div className="intro">
+      <img src="/app-image/abeja.png" alt="" />
+      <p>This app is only for mobiles</p>
+      <a className="intro__link" href="https://abeja.com.tr">
+        Visit website
+      </a>
+    </div>
+  ) : (
+    <Routers />
+  );
 }
 
 render(<Index />, document.getElementById("root"));

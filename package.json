@@ -26,6 +26,7 @@
     "react-select": "^4.3.0",
     "react-slick": "^0.28.1",
     "react-slidedown": "^2.4.5",
+    "react-spinners": "^0.10.6",
     "react-sticky-box": "^0.9.3",
     "scroll-lock": "^2.1.5",
     "slick-carousel": "^1.8.1",

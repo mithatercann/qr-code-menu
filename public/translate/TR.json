@@ -1,0 +1,10 @@
+[
+{
+         "cart":"SEPET",
+         "popup":"Sepeti temizlemek istiyor musunuz?",
+         "moreInfo":"Sepete ekle",
+         "deleteInfo":"Sepetten sil",
+	"cancel" : "İptal",
+	"clear" : "Temizle"
+      }
+]

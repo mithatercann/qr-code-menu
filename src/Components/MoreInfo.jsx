@@ -2,7 +2,14 @@ import React, { useEffect, useState } from "react";
 import getSymbolFromCurrency from "currency-symbol-map";
 import { AiOutlineFieldTime, AiOutlineHeart } from "react-icons/ai";
 import "react-slidedown/lib/slidedown.css";
-function MoreInfo({ data, isInfoOpened, closeInfo, location, addToCart }) {
+function MoreInfo({
+  data,
+  isInfoOpened,
+  closeInfo,
+  location,
+  addToCart,
+  translateData,
+}) {
   const [scrolled, setScrolled] = useState(0);
   const [transition, setTransition] = useState(0);
   const [opacity, setOpacity] = useState(0);
@@ -104,7 +111,7 @@ function MoreInfo({ data, isInfoOpened, closeInfo, location, addToCart }) {
                   }}
                   className="info__btn info__btn--add"
                 >
-                  Add to cart
+                  {translateData.moreInfo}
                 </button>
               </div>
             </div>

@@ -20,7 +20,7 @@ function Intro({ languages, setLanguage }) {
           display: "none",
         });
       }
-    }, 30);
+    }, 40);
   };
 
   console.log(languages);

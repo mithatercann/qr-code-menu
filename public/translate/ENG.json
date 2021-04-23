@@ -1,0 +1,10 @@
+[
+   {
+      "cart":"CART",
+      "popup":"Do you want to clear the cart?",
+      "moreInfo":"Add to cart",
+      "deleteInfo":"Remove from cart",
+      "cancel":"Cancel",
+      "clear":"Clear"
+   }
+]

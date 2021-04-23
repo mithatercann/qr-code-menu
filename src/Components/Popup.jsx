@@ -1,7 +1,9 @@
 import React from "react";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import { BiTrash } from "react-icons/bi";
-function Popup({ warning, setWarning, clearCart }) {
+function Popup({ warning, setWarning, clearCart, translateData }) {
+  console.log("popup " + translateData);
+
   return (
     <div>
       <div
@@ -15,7 +17,7 @@ function Popup({ warning, setWarning, clearCart }) {
       ></div>
       <div className={`cart__popup ${warning && "cart__popup--opened"}`}>
         <BiTrash size={70} />
-        <h3>Do you want to clear the cart?</h3>
+        <h3>{translateData.popup}</h3>
 
         <div className="cart__popup--btns">
           <button
@@ -24,7 +26,7 @@ function Popup({ warning, setWarning, clearCart }) {
               enablePageScroll();
             }}
           >
-            No
+            {translateData.cancel}
           </button>
           <button
             onClick={() => {
@@ -34,7 +36,7 @@ function Popup({ warning, setWarning, clearCart }) {
             }}
             className="cart__popup--btns--clear"
           >
-            Clear
+            {translateData.clear}
           </button>
         </div>
       </div>

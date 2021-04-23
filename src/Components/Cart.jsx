@@ -15,6 +15,7 @@ function Cart({
   restaurantName,
   clearCart,
   setWarning,
+  translateData,
 }) {
   const [cartLength, setCartLength] = useState();
   const w = window.innerWidth;
@@ -30,7 +31,7 @@ function Cart({
     <div className={`cart ${isCartOpened}`}>
       <nav>
         <IoIosArrowBack size={26} onClick={() => closeCart()} />
-        <p>SEPET</p>
+        <p>{translateData.cart}</p>
         <AiOutlineClear
           onClick={() => {
             if (cartData.length !== 0) {

@@ -32,6 +32,7 @@ const Layout = ({
   openCartInfo,
   fullData,
   clearCart,
+  translateData,
 }) => {
   const [isCartOpened, setIsCartOpened] = useState("closed");
   const [style, setStyle] = useState({});
@@ -135,6 +136,7 @@ const Layout = ({
         restaurantName={restaurantName}
         clearCart={() => clearCart()}
         setWarning={(prop) => setWarning(prop)}
+        translateData={translateData}
       />
       <MoreInfo
         closeInfo={() => closeInfo()}
@@ -142,6 +144,7 @@ const Layout = ({
         data={info}
         location={location}
         addToCart={(item, quantity) => addToCart(item, quantity)}
+        translateData={translateData}
       />
       <MoreInfoCart
         closeCartInfo={() => closeCartInfo()}
@@ -150,11 +153,13 @@ const Layout = ({
         location={location}
         addToCart={(item, quantity) => addToCart(item, quantity)}
         removeFromCart={(itemCode) => removeFromCart(itemCode)}
+        translateData={translateData}
       />
       <Popup
         setWarning={(prop) => setWarning(prop)}
         warning={warning}
         clearCart={() => clearCart()}
+        translateData={translateData}
       />
       <Footer />
     </div>

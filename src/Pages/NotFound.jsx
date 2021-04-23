@@ -1,14 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+
 function NotFound() {
-  var style = {
-    display: "none",
-  };
+  const [style, setStyle] = useState({ display: "none" });
 
   setTimeout(() => {
-    style = {
-      display: "block",
-    };
+    setStyle({
+      display: "",
+    });
   }, 1000);
   return (
     <div style={style} className="notfound">
