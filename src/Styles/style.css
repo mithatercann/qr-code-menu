@@ -402,6 +402,7 @@ img {
   background-size: cover;
   background-position: center;
   border-radius: 10px;
+  background-repeat: no-repeat;
 }
 
 .menu__fixed {
@@ -775,7 +776,7 @@ img {
 .intro {
   position: fixed;
   top: 0;
-  height: 90vh;
+  height: 95vh;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;

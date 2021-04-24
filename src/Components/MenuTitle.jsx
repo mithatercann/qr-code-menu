@@ -46,7 +46,6 @@ const MenuTitle = ({
       <section className={`menu__titles`}>
         {menuTitles.map((item) => (
           <div
-            key={uuid()}
             onClick={(e) => {
               checkScrollTop(item);
               setSelected(item);

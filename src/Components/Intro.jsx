@@ -13,6 +13,7 @@ function Intro({ languages, setLanguage }) {
     var num = 0;
     var interval = setInterval(() => {
       enablePageScroll();
+
       num++;
       if (num === 10) {
         clearInterval(interval);
@@ -26,10 +27,7 @@ function Intro({ languages, setLanguage }) {
   console.log(languages);
   return (
     <div style={style} className={`intro ${fadeOut ? "fadeOut" : null}`}>
-      <img
-        src={`http://5.189.162.97:1234/${location.pathname}/logo.png`}
-        alt=""
-      />
+      <img src={`images${location.pathname}/logo.png`} alt="" />
       <div className="intro__btns">
         {languages.map((language) => (
           <button

@@ -2,8 +2,6 @@ import React from "react";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import { BiTrash } from "react-icons/bi";
 function Popup({ warning, setWarning, clearCart, translateData }) {
-  console.log("popup " + translateData);
-
   return (
     <div>
       <div

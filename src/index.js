@@ -7,7 +7,7 @@ function Index() {
   const w = window.innerWidth;
   console.log("width = " + w);
 
-  return w >= 450 ? (
+  return w >= 650 ? (
     <div className="intro">
       <img src="/app-image/abeja.png" alt="" />
       <p>This app is only for mobiles</p>

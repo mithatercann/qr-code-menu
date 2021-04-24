@@ -68,7 +68,6 @@ const MenuList = ({
           ) : (
             searchData.map((item) => (
               <div
-                key={uuid()}
                 onClick={(e) => {
                   openInfo(item);
                 }}
@@ -125,7 +124,6 @@ const MenuList = ({
       ) : (
         menuList.map((item) => (
           <div
-            key={uuid()}
             onClick={(e) => {
               openInfo(item);
             }}
