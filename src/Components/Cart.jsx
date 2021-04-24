@@ -62,7 +62,7 @@ function Cart({
               <div className="cart__item--inner">
                 <img
                   className="cart__item--img"
-                  src={`/images${location}/${
+                  src={`http://5.189.162.97:1234/${location}/${
                     item.PIC == "true" ? "pics" : "categories"
                   }/${
                     item.PIC == "true"

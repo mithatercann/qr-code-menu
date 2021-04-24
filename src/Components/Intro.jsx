@@ -26,7 +26,10 @@ function Intro({ languages, setLanguage }) {
   console.log(languages);
   return (
     <div style={style} className={`intro ${fadeOut ? "fadeOut" : null}`}>
-      <img src={`/images${location.pathname}/logo.png`} alt="" />
+      <img
+        src={`http://5.189.162.97:1234/${location.pathname}/logo.png`}
+        alt=""
+      />
       <div className="intro__btns">
         {languages.map((language) => (
           <button

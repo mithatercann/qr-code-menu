@@ -7,12 +7,10 @@
   display: flex;
   align-items: center;
   width: 100%;
-  z-index: 5;
   padding: 20px 10px;
   display: flex;
   align-items: center;
   margin-top: 70px;
-
   user-select: none;
   small {
     font-size: 12px;
@@ -20,42 +18,7 @@
     margin-top: 9px;
     white-space: nowrap;
   }
-  &--normal {
-    .menu__title--img {
-      height: 100px;
-    }
-  }
-  &--fixed {
-    height: 60px;
-    position: fixed;
-    width: 100%;
-    margin-top: 65px;
-    color: #ffff;
-    box-shadow: 0 1px 13px 0 rgb(230, 230, 230);
-    background-color: #fff;
-    .menu__title--img {
-      display: none;
-    }
-    .menu__title--bg {
-      display: none;
-    }
-    .menu__title {
-      margin: 0 10px;
-      height: 0;
-      padding: 15px 10px 20px 10px;
-      border-radius: 20px;
-
-      &--selected {
-        background-color: rgb(231, 231, 231);
-        box-shadow: none;
-        small {
-          color: #4fa2dd;
-        }
-      }
-    }
-  }
 }
-
 .menu__title {
   position: relative;
   display: flex;
@@ -65,15 +28,16 @@
   color: #708090;
   text-align: center;
   margin: 0 3px;
-  z-index: 10;
+  z-index: 9;
   padding: 10px;
+
   &--selected {
     position: relative;
     background: #fff;
-    box-shadow: 0 0 13px 0 rgba(41, 41, 41, 0.096);
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.116);
     padding: 10px;
     border-radius: 20px;
-
+    text-align: center;
     small {
       color: #4fa2dd;
     }
@@ -85,7 +49,38 @@
     background-size: cover;
     background-position: center;
     border-radius: 10px;
-    transition: 0.2s;
-    z-index: 4;
+  }
+}
+
+.menu__fixed {
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch;
+  position: fixed;
+  left: 0;
+  top: 60px;
+  z-index: 9;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: n;
+  background-color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 1px 13px 0 rgb(230, 230, 230);
+  line-height: 0.5;
+  text-align: center;
+  transition: 0.3s;
+
+  small {
+    color: rgb(112, 112, 112);
+    padding: 20px;
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  &--selected {
+    position: relative;
+    background-color: rgb(230, 230, 230);
+    padding: 14px 10px !important;
+    border-radius: 20px;
+    color: #4fa2dd !important;
   }
 }

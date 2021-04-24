@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { AiOutlineFieldTime } from "react-icons/ai";
 import { IoIosArrowForward } from "react-icons/io";
 import getSymbolFromCurrency from "currency-symbol-map";
+import { v4 as uuid } from "uuid";
 const MenuList = ({
   menuList,
   title,
@@ -15,8 +16,6 @@ const MenuList = ({
   const [searchData, setSearchData] = useState([]);
   const [searchDataLength, setSearchDataLength] = useState();
   const w = window.innerWidth;
-  // var userLang = navigator.language || navigator.userLanguage;
-  // alert("The language is: " + userLang);
 
   useEffect(() => {
     var dataForName = fullData.filter((item) =>
@@ -36,7 +35,7 @@ const MenuList = ({
 
   const handleTouchStart = () => {
     if (fixed) {
-      document.querySelector(".menu__title--selected").scrollIntoView({
+      document.querySelector(".menu__fixed--selected").scrollIntoView({
         behavior: "smooth",
         inline: "center",
         block: "center",
@@ -78,7 +77,7 @@ const MenuList = ({
                   <div className="menu__list--top">
                     <img
                       className={"menu__list--img"}
-                      src={`/images${location}/${
+                      src={`http://5.189.162.97:1234/${location}/${
                         item.PIC == "true" ? "pics" : "categories"
                       }/${
                         item.PIC == "true"
@@ -134,7 +133,7 @@ const MenuList = ({
               <div className="menu__list--top">
                 <img
                   className={"menu__list--img"}
-                  src={`/images${location}/${
+                  src={`http://5.189.162.97:1234/${location}/${
                     item.PIC == "true" ? "pics" : "categories"
                   }/${
                     item.PIC == "true"
