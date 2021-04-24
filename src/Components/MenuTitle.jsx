@@ -46,6 +46,7 @@ const MenuTitle = ({
       <section className={`menu__titles`}>
         {menuTitles.map((item) => (
           <div
+            key={uuid()}
             onClick={(e) => {
               checkScrollTop(item);
               setSelected(item);
@@ -61,7 +62,7 @@ const MenuTitle = ({
           >
             <div
               style={{
-                backgroundImage: `url("http://5.189.162.97:1234/${location}/categories/${item
+                backgroundImage: `url("images${location}/categories/${item
                   .split(" ")
                   .join("_")}.jpg")`,
               }}

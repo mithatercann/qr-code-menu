@@ -68,6 +68,7 @@ const MenuList = ({
           ) : (
             searchData.map((item) => (
               <div
+                key={uuid()}
                 onClick={(e) => {
                   openInfo(item);
                 }}
@@ -77,7 +78,7 @@ const MenuList = ({
                   <div className="menu__list--top">
                     <img
                       className={"menu__list--img"}
-                      src={`http://5.189.162.97:1234/${location}/${
+                      src={`images${location}/${
                         item.PIC == "true" ? "pics" : "categories"
                       }/${
                         item.PIC == "true"
@@ -124,6 +125,7 @@ const MenuList = ({
       ) : (
         menuList.map((item) => (
           <div
+            key={uuid()}
             onClick={(e) => {
               openInfo(item);
             }}
@@ -133,7 +135,7 @@ const MenuList = ({
               <div className="menu__list--top">
                 <img
                   className={"menu__list--img"}
-                  src={`http://5.189.162.97:1234/${location}/${
+                  src={`images${location}/${
                     item.PIC == "true" ? "pics" : "categories"
                   }/${
                     item.PIC == "true"
