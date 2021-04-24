@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import getSymbolFromCurrency from "currency-symbol-map";
 import { AiOutlineFieldTime } from "react-icons/ai";
-import "react-slidedown/lib/slidedown.css";
+
 function MoreInfoCart({
   data,
   isCartInfoOpened,

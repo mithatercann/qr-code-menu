@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import getSymbolFromCurrency from "currency-symbol-map";
 import { AiOutlineFieldTime, AiOutlineHeart } from "react-icons/ai";
-import "react-slidedown/lib/slidedown.css";
 function MoreInfo({
   data,
   isInfoOpened,
