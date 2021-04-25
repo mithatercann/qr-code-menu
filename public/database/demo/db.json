@@ -1,0 +1,1443 @@
+[
+  {
+    "CODE": "M-00001",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "TEQ ESPRESSO",
+      "TR": "SİNGLE ESPRESSO"
+    },
+    "TYPE": {
+      "AZE": "SICAQ KEHVE",
+      "ENG": "HOT COFFEE",
+      "TR": "SICAK KAHVE"
+    }
+  },
+  {
+    "CODE": "M-00002",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "DOUBLE ESPRESSO"
+    },
+    "TYPE": {
+      "ENG": "HOT COFFEE",
+      "TR": "SICAK KAHVE"
+    }
+  },
+  {
+    "CODE": "M-00003",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "CORTADO"
+    },
+    "TYPE": {
+      "ENG": "HOT COFFEE",
+      "TR": "SICAK KAHVE"
+    }
+  },
+  {
+    "CODE": "M-00004",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "ESPRESSO MACCHİATO"
+    },
+    "TYPE": {
+      "ENG": "HOT COFFEE",
+      "TR": "SICAK KAHVE"
+    }
+  },
+  {
+    "CODE": "M-00005",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "AMERİCANO"
+    },
+    "TYPE": {
+      "ENG": "HOT COFFEE",
+      "TR": "SICAK KAHVE"
+    }
+  },
+  {
+    "CODE": "M-00006",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "ORTA AMERİCANO"
+    },
+    "TYPE": {
+      "ENG": "HOT COFFEE",
+      "TR": "SICAK KAHVE"
+    }
+  },
+  {
+    "CODE": "M-00007",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "RED EYE"
+    },
+    "TYPE": {
+      "ENG": "HOT COFFEE",
+      "TR": "SICAK KAHVE"
+    }
+  },
+  {
+    "CODE": "M-00008",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "FLAT WHİTE"
+    },
+    "TYPE": {
+      "ENG": "HOT COFFEE",
+      "TR": "SICAK KAHVE"
+    }
+  },
+  {
+    "CODE": "M-00009",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "LATTE"
+    },
+    "TYPE": {
+      "ENG": "HOT COFFEE",
+      "TR": "SICAK KAHVE"
+    }
+  },
+  {
+    "CODE": "M-00010",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "MOCHA"
+    },
+    "TYPE": {
+      "ENG": "HOT COFFEE",
+      "TR": "SICAK KAHVE"
+    }
+  },
+  {
+    "CODE": "M-00011",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "ROOİBOS CORTADO"
+    },
+    "TYPE": {
+      "ENG": "HOT COFFEE",
+      "TR": "SICAK KAHVE"
+    }
+  },
+  {
+    "CODE": "M-00012",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "SICAK ÇİKOLATA"
+    },
+    "TYPE": {
+      "ENG": "HOT COFFEE",
+      "TR": "SICAK KAHVE"
+    }
+  },
+  {
+    "CODE": "M-00013",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "CHAİ TEA LATTE"
+    },
+    "TYPE": {
+      "ENG": "HOT COFFEE",
+      "TR": "SICAK KAHVE"
+    }
+  },
+  {
+    "CODE": "M-00014",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "İCED LATTE"
+    },
+    "TYPE": {
+      "ENG": "COLD COFFEE",
+      "TR": "SOĞUK KAHVELER"
+    }
+  },
+  {
+    "CODE": "M-00015",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "İCED AMERİCANO"
+    },
+    "TYPE": {
+      "ENG": "COLD COFFEE",
+      "TR": "SOĞUK KAHVELER"
+    }
+  },
+  {
+    "CODE": "M-00016",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "İCED MOCHA"
+    },
+    "TYPE": {
+      "ENG": "COLD COFFEE",
+      "TR": "SOĞUK KAHVELER"
+    }
+  },
+  {
+    "CODE": "M-00017",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "İCED CHAİ TEA LATTE"
+    },
+    "TYPE": {
+      "ENG": "COLD COFFEE",
+      "TR": "SOĞUK KAHVELER"
+    }
+  },
+  {
+    "CODE": "M-00018",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "JAPANESE CLOD DRİP"
+    },
+    "TYPE": {
+      "ENG": "COLD COFFEE",
+      "TR": "SOĞUK KAHVELER"
+    }
+  },
+  {
+    "CODE": "M-00019",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "CLOD BREW"
+    },
+    "TYPE": {
+      "ENG": "COLD COFFEE",
+      "TR": "SOĞUK KAHVELER"
+    }
+  },
+  {
+    "CODE": "M-00020",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "AFFOGATO"
+    },
+    "TYPE": {
+      "ENG": "COLD COFFEE",
+      "TR": "SOĞUK KAHVELER"
+    }
+  },
+  {
+    "CODE": "M-00021",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "SHOT ESPRESSO"
+    },
+    "TYPE": {
+      "ENG": "EXTRA",
+      "TR": "EKSTRA"
+    }
+  },
+  {
+    "CODE": "M-00022",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "LAKTOZSUZ SÜT"
+    },
+    "TYPE": {
+      "ENG": "EXTRA",
+      "TR": "EKSTRA"
+    }
+  },
+  {
+    "CODE": "M-00023",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "SOYA SÜT"
+    },
+    "TYPE": {
+      "ENG": "EXTRA",
+      "TR": "EKSTRA"
+    }
+  },
+  {
+    "CODE": "M-00024",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "FİLTRE KAHVE"
+    },
+    "TYPE": {
+      "ENG": "FILTRED",
+      "TR": "DEMLEMELER"
+    }
+  },
+  {
+    "CODE": "M-00025",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "ORTA FİLTRE KAHVE"
+    },
+    "TYPE": {
+      "ENG": "FILTRED",
+      "TR": "DEMLEMELER"
+    }
+  },
+  {
+    "CODE": "M-00026",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "CHEMEX"
+    },
+    "TYPE": {
+      "ENG": "FILTRED",
+      "TR": "DEMLEMELER"
+    }
+  },
+  {
+    "CODE": "M-00027",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "V60"
+    },
+    "TYPE": {
+      "ENG": "FILTRED",
+      "TR": "DEMLEMELER"
+    }
+  },
+  {
+    "CODE": "M-00028",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "AEROPRESS"
+    },
+    "TYPE": {
+      "ENG": "FILTRED",
+      "TR": "DEMLEMELER"
+    }
+  },
+  {
+    "CODE": "M-00029",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "DELTER PRESS"
+    },
+    "TYPE": {
+      "ENG": "FILTRED",
+      "TR": "DEMLEMELER"
+    }
+  },
+  {
+    "CODE": "M-00030",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "TÜRK KAHVESİ"
+    },
+    "TYPE": {
+      "ENG": "FILTRED",
+      "TR": "DEMLEMELER"
+    }
+  },
+  {
+    "CODE": "M-00031",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "BİTKİ ÇAYI"
+    },
+    "TYPE": {
+      "ENG": "FILTRED",
+      "TR": "DEMLEMELER"
+    }
+  },
+  {
+    "CODE": "M-00032",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "ÇAY"
+    },
+    "TYPE": {
+      "ENG": "FILTRED",
+      "TR": "DEMLEMELER"
+    }
+  },
+  {
+    "CODE": "M-00033",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "SOĞUK ÇAY"
+    },
+    "TYPE": {
+      "ENG": "COLD DRINKS",
+      "TR": "SOĞUK İÇECEKLER"
+    }
+  },
+  {
+    "CODE": "M-00034",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "LİMONATA"
+    },
+    "TYPE": {
+      "ENG": "COLD DRINKS",
+      "TR": "SOĞUK İÇECEKLER"
+    }
+  },
+  {
+    "CODE": "M-00035",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "KAKAOLU MİLKSHAKE"
+    },
+    "TYPE": {
+      "ENG": "COLD DRINKS",
+      "TR": "SOĞUK İÇECEKLER"
+    }
+  },
+  {
+    "CODE": "M-00036",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "SADE MİLKSHAKE"
+    },
+    "TYPE": {
+      "ENG": "COLD DRINKS",
+      "TR": "SOĞUK İÇECEKLER"
+    }
+  },
+  {
+    "CODE": "M-00037",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "SU"
+    },
+    "TYPE": {
+      "ENG": "COLD DRINKS",
+      "TR": "SOĞUK İÇECEKLER"
+    }
+  },
+  {
+    "CODE": "M-00038",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "SODA"
+    },
+    "TYPE": {
+      "ENG": "COLD DRINKS",
+      "TR": "SOĞUK İÇECEKLER"
+    }
+  },
+  {
+    "CODE": "M-00039",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "SAN PELLEGRİNO"
+    },
+    "TYPE": {
+      "ENG": "COLD DRINKS",
+      "TR": "SOĞUK İÇECEKLER"
+    }
+  },
+  {
+    "CODE": "M-00040",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "KOMBUCHA"
+    },
+    "TYPE": {
+      "ENG": "COLD DRINKS",
+      "TR": "SOĞUK İÇECEKLER"
+    }
+  },
+  {
+    "CODE": "M-00041",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "KRUVASAN"
+    },
+    "TYPE": {
+      "ENG": "SANDWICH",
+      "TR": "SANDVİÇLER"
+    }
+  },
+  {
+    "CODE": "M-00042",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "HARİO CAM KARAF 02"
+    },
+    "TYPE": {
+      "ENG": "EQUIPMENTS",
+      "TR": "EKİPMANLAR"
+    }
+  },
+  {
+    "CODE": "M-00043",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "HARİO SERAMİK DRİPPER 02"
+    },
+    "TYPE": {
+      "ENG": "EQUIPMENTS",
+      "TR": "EKİPMANLAR"
+    }
+  },
+  {
+    "CODE": "M-00044",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "DECANTER"
+    },
+    "TYPE": {
+      "ENG": "EQUIPMENTS",
+      "TR": "EKİPMANLAR"
+    }
+  },
+  {
+    "CODE": "M-00045",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "V60 HARİO FİLTRE 01"
+    },
+    "TYPE": {
+      "ENG": "EQUIPMENTS",
+      "TR": "EKİPMANLAR"
+    }
+  },
+  {
+    "CODE": "M-00046",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "V60 HARİO FİLTRE 02"
+    },
+    "TYPE": {
+      "ENG": "EQUIPMENTS",
+      "TR": "EKİPMANLAR"
+    }
+  },
+  {
+    "CODE": "M-00047",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "AEROPRESS"
+    },
+    "TYPE": {
+      "ENG": "EQUIPMENTS",
+      "TR": "EKİPMANLAR"
+    }
+  },
+  {
+    "CODE": "M-00048",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "TİMER"
+    },
+    "TYPE": {
+      "ENG": "EQUIPMENTS",
+      "TR": "EKİPMANLAR"
+    }
+  },
+  {
+    "CODE": "M-00049",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "DELTER PRESS"
+    },
+    "TYPE": {
+      "ENG": "EQUIPMENTS",
+      "TR": "EKİPMANLAR"
+    }
+  },
+  {
+    "CODE": "M-00050",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "TÜRK KAHVESİ CEZVESİ"
+    },
+    "TYPE": {
+      "ENG": "EQUIPMENTS",
+      "TR": "EKİPMANLAR"
+    }
+  },
+  {
+    "CODE": "M-00051",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "TERMOMETRE"
+    },
+    "TYPE": {
+      "ENG": "EQUIPMENTS",
+      "TR": "EKİPMANLAR"
+    }
+  },
+  {
+    "CODE": "M-00052",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "DECANTER METAL FİLTRELİ"
+    },
+    "TYPE": {
+      "ENG": "EQUIPMENTS",
+      "TR": "EKİPMANLAR"
+    }
+  },
+  {
+    "CODE": "M-00053",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "CHEMEX FİLTRE KAĞIDI 3 CUP"
+    },
+    "TYPE": {
+      "ENG": "EQUIPMENTS",
+      "TR": "EKİPMANLAR"
+    }
+  },
+  {
+    "CODE": "M-00054",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "CHEMEX FİLTRE KAĞIDI 6 CUP"
+    },
+    "TYPE": {
+      "ENG": "EQUIPMENTS",
+      "TR": "EKİPMANLAR"
+    }
+  },
+  {
+    "CODE": "M-00055",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "HARİO KETTLE 1,2 L"
+    },
+    "TYPE": {
+      "ENG": "EQUIPMENTS",
+      "TR": "EKİPMANLAR"
+    }
+  },
+  {
+    "CODE": "M-00056",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "MOTTA SİYAH 35 CL SÜT P"
+    },
+    "TYPE": {
+      "ENG": "EQUIPMENTS",
+      "TR": "EKİPMANLAR"
+    }
+  },
+  {
+    "CODE": "M-00057",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "MOTTA YEŞİL 50 CL SÜT P"
+    },
+    "TYPE": {
+      "ENG": "EQUIPMENTS",
+      "TR": "EKİPMANLAR"
+    }
+  },
+  {
+    "CODE": "M-00058",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "MOTTA RED 35 CL SÜT P"
+    },
+    "TYPE": {
+      "ENG": "EQUIPMENTS",
+      "TR": "EKİPMANLAR"
+    }
+  },
+  {
+    "CODE": "M-00059",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "GUATEMALA BUENA VİSTA 250 GR"
+    },
+    "TYPE": {
+      "ENG": "COFFEE",
+      "TR": "KAHVELER"
+    }
+  },
+  {
+    "CODE": "M-00060",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "GUATEMALA FEMALE GROWERS 250 GR"
+    },
+    "TYPE": {
+      "ENG": "COFFEE",
+      "TR": "KAHVELER"
+    }
+  },
+  {
+    "CODE": "M-00061",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "PERU ELİ ESPİNZO NATURAL 250 GR"
+    },
+    "TYPE": {
+      "ENG": "COFFEE",
+      "TR": "KAHVELER"
+    }
+  },
+  {
+    "CODE": "M-00062",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "PERU CHİRİNOS 250 GR"
+    },
+    "TYPE": {
+      "ENG": "COFFEE",
+      "TR": "KAHVELER"
+    }
+  },
+  {
+    "CODE": "M-00063",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "KOSTA RİKA LAS LAJAS HONEY 250 GR"
+    },
+    "TYPE": {
+      "ENG": "COFFEE",
+      "TR": "KAHVELER"
+    }
+  },
+  {
+    "CODE": "M-00064",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "GUATEMALA BUENA VİSTA 100 GR"
+    },
+    "TYPE": {
+      "ENG": "COFFEE",
+      "TR": "KAHVELER"
+    }
+  },
+  {
+    "CODE": "M-00065",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "GUATEMALA FEMALE GROWERS 100 GR"
+    },
+    "TYPE": {
+      "ENG": "COFFEE",
+      "TR": "KAHVELER"
+    }
+  },
+  {
+    "CODE": "M-00066",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "PERU ELİ ESPİNZO NATURAL 100 GR"
+    },
+    "TYPE": {
+      "ENG": "COFFEE",
+      "TR": "KAHVELER"
+    }
+  },
+  {
+    "CODE": "M-00067",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "PERU CHİRİNOS 100 GR"
+    },
+    "TYPE": {
+      "ENG": "COFFEE",
+      "TR": "KAHVELER"
+    }
+  },
+  {
+    "CODE": "M-00068",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "KOSTA RİKA LAS LAJAS HONEY 100 GR"
+    },
+    "TYPE": {
+      "ENG": "COFFEE",
+      "TR": "KAHVELER"
+    }
+  },
+  {
+    "CODE": "M-00069",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "PERU HUABAL TÜRK 250 GR"
+    },
+    "TYPE": {
+      "ENG": "COFFEE",
+      "TR": "KAHVELER"
+    }
+  },
+  {
+    "CODE": "M-00070",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "HONDURAS GUALME KAFEİNSİZ 250 GR"
+    },
+    "TYPE": {
+      "ENG": "COFFEE",
+      "TR": "KAHVELER"
+    }
+  },
+  {
+    "CODE": "M-00071",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "PERU HUABAL TÜRK 100 GR"
+    },
+    "TYPE": {
+      "ENG": "COFFEE",
+      "TR": "KAHVELER"
+    }
+  },
+  {
+    "CODE": "M-00072",
+    "CURRENCY": "TRY",
+    "DURATION": "15-30",
+    "PIC": false,
+    "PRICE": 12,
+    "DESCRIPTION": {
+      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
+      "ENG": "This is English description, it's for testing the application. Random text..",
+      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+    },
+    "NAME": {
+      "AZE": "AZERBAIJAN TEST",
+      "TR": "HONDURAS GUALME KAFEİNSİZ 100 GR"
+    },
+    "TYPE": {
+      "ENG": "COFFEE",
+      "TR": "KAHVELER"
+    }
+  }
+]

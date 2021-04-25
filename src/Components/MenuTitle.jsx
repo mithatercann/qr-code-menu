@@ -9,6 +9,7 @@ const MenuTitle = ({
   clearSearchValue,
   closeSearch,
   title,
+  language,
 }) => {
   const [selected, setSelected] = useState(title);
 

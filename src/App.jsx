@@ -20,6 +20,7 @@ function App({ languages }) {
   const [isInfoOpened, setIsInfoOpened] = useState(false);
   const [isCartInfoOpened, setIsCartInfoOpened] = useState(false);
   const [translateData, setTranslateData] = useState([]);
+  const [styleForLayout, setStyleForLayout] = useState({});
   const API = `./database${location.pathname}/${language}/db.json`;
   const TRANSLATE = `./translate/${language}.json`;
 
@@ -143,8 +144,14 @@ function App({ languages }) {
         <Intro
           setLanguage={(language) => setLanguage(language)}
           languages={languages}
+          setStyleForLayout={() =>
+            setStyleForLayout({
+              animation: "fadeInLayout 2s forwards",
+            })
+          }
         />
         <Layout
+          styleForLayout={styleForLayout}
           translateData={translateData}
           menuTitles={menuTitle}
           menuList={menuList}

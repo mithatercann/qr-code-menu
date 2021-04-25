@@ -33,6 +33,8 @@ const Layout = ({
   fullData,
   clearCart,
   translateData,
+  styleForLayout,
+  language,
 }) => {
   const [isCartOpened, setIsCartOpened] = useState("closed");
   const [style, setStyle] = useState({});
@@ -59,6 +61,7 @@ const Layout = ({
       overflow: "scroll",
       width: "auto",
       height: "auto",
+      animation: "fadeIn 1s forwards",
     });
   };
 
@@ -74,7 +77,7 @@ const Layout = ({
 
   useEffect(() => {
     const handleScroll = (e) => {
-      if (getWindowScrollTop() >= 144) {
+      if (getWindowScrollTop() >= 130) {
         setFixed(true);
       } else {
         setFixed(false);
@@ -94,7 +97,7 @@ const Layout = ({
   };
 
   return (
-    <div style={style}>
+    <div style={{ ...style, ...styleForLayout }}>
       <Header
         openCart={() => openCart()}
         cartData={cartData}
@@ -115,6 +118,7 @@ const Layout = ({
         fixed={fixed}
         clearSearchValue={() => setSearchValue("")}
         closeSearch={() => setIsSearchOpened(false)}
+        language={language}
       />
       <MenuList
         fullData={fullData}
@@ -125,6 +129,7 @@ const Layout = ({
         openInfo={(item) => openInfo(item)}
         isInfoOpened={isInfoOpened}
         searchValue={searchValue}
+        language={language}
       />
       <Cart
         currency={currency}

@@ -49,7 +49,7 @@
 .intro {
   position: fixed;
   top: 0;
-  height: 95vh;
+  height: 100vh;
   width: 100vw;
   display: flex;
   flex-direction: column;
@@ -60,6 +60,7 @@
   background: #fff;
   z-index: 2006;
   transition: 0.7s;
+
   &::after {
     content: "";
     position: fixed;
@@ -70,10 +71,14 @@
     background-image: url("../img/bg.jpg");
     background-size: 150%;
     opacity: 0.22;
+
+    animation: fadeInAfter 1s forwards;
   }
   &__btns {
     display: flex;
-    margin-top: 25px;
+    margin-top: 10px;
+    margin-bottom: 80px;
+    animation: fadeIn 1s forwards;
   }
   &.fadeOut {
     transform: scale(5);
@@ -82,6 +87,7 @@
   img {
     width: 200px;
     filter: drop-shadow(0px 0 5px rgb(202, 202, 202));
+    animation: fadeIn 1s forwards;
   }
   button {
     text-decoration: none;
@@ -106,5 +112,22 @@
     background: -webkit-linear-gradient(to right, #2f80ed, #56ccf2);
     background: linear-gradient(to right, #2f80ed, #56ccf2);
     margin: 20px 0;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeInAfter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.22;
   }
 }

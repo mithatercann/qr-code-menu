@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { disablePageScroll, enablePageScroll } from "scroll-lock";
 import { useLocation } from "react-router-dom";
 
-function Intro({ languages, setLanguage }) {
+function Intro({ languages, setLanguage, setStyleForLayout }) {
   const location = useLocation();
   const [fadeOut, setFadeOut] = useState(false);
   const [style, setStyle] = useState({});
@@ -32,6 +32,7 @@ function Intro({ languages, setLanguage }) {
         {languages.map((language) => (
           <button
             onClick={() => {
+              setStyleForLayout();
               setFadeOut(true);
               setLanguage(language.language);
               test();

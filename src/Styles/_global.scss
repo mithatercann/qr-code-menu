@@ -32,3 +32,12 @@ img {
 .hidden {
   display: none;
 }
+
+@keyframes fadeInLayout {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

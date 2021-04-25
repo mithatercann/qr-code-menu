@@ -12,6 +12,7 @@ const MenuList = ({
   fullData,
   searchValue,
   style,
+  language,
 }) => {
   const [searchData, setSearchData] = useState([]);
   const [searchDataLength, setSearchDataLength] = useState();

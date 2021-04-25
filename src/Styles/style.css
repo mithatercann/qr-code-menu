@@ -35,6 +35,24 @@ img {
   display: none;
 }
 
+@-webkit-keyframes fadeInLayout {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInLayout {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -355,7 +373,7 @@ img {
 .menu__titles small {
   font-size: 12px;
   color: gray;
-  margin-top: 9px;
+  margin-top: 5px;
   white-space: nowrap;
 }
 
@@ -376,7 +394,7 @@ img {
           justify-content: center;
   color: #708090;
   text-align: center;
-  margin: 0 3px;
+  margin: 0 5px;
   z-index: 9;
   padding: 10px;
 }
@@ -428,8 +446,8 @@ img {
           box-shadow: 0 1px 13px 0 #e6e6e6;
   line-height: 0.5;
   text-align: center;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .menu__fixed small {
@@ -776,7 +794,7 @@ img {
 .intro {
   position: fixed;
   top: 0;
-  height: 95vh;
+  height: 100vh;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -809,13 +827,18 @@ img {
   background-image: url("../img/bg.jpg");
   background-size: 150%;
   opacity: 0.22;
+  -webkit-animation: fadeInAfter 1s forwards;
+          animation: fadeInAfter 1s forwards;
 }
 
 .intro__btns {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 25px;
+  margin-top: 10px;
+  margin-bottom: 80px;
+  -webkit-animation: fadeIn 1s forwards;
+          animation: fadeIn 1s forwards;
 }
 
 .intro.fadeOut {
@@ -828,6 +851,8 @@ img {
   width: 200px;
   -webkit-filter: drop-shadow(0px 0 5px #cacaca);
           filter: drop-shadow(0px 0 5px #cacaca);
+  -webkit-animation: fadeIn 1s forwards;
+          animation: fadeIn 1s forwards;
 }
 
 .intro button {
@@ -856,6 +881,42 @@ img {
   background: -webkit-gradient(linear, left top, right top, from(#2f80ed), to(#56ccf2));
   background: linear-gradient(to right, #2f80ed, #56ccf2);
   margin: 20px 0;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeInAfter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.22;
+  }
+}
+
+@keyframes fadeInAfter {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.22;
+  }
 }
 
 .info {
