@@ -9,7 +9,7 @@ const MenuTitle = ({
   clearSearchValue,
   closeSearch,
   title,
-  language,
+  imageTitle,
 }) => {
   const [selected, setSelected] = useState(title);
 
@@ -45,7 +45,7 @@ const MenuTitle = ({
   return (
     <>
       <section className={`menu__titles`}>
-        {menuTitles.map((item) => (
+        {menuTitles.map((item, index) => (
           <div
             onClick={(e) => {
               checkScrollTop(item);
@@ -62,7 +62,9 @@ const MenuTitle = ({
           >
             <div
               style={{
-                backgroundImage: `url("images${location}/categories/${item
+                backgroundImage: `url("images${location}/categories/${imageTitle[
+                  index
+                ]
                   .split(" ")
                   .join("_")}.jpg")`,
               }}

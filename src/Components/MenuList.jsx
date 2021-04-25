@@ -20,13 +20,15 @@ const MenuList = ({
 
   useEffect(() => {
     var dataForName = fullData.filter((item) =>
-      item.NAME.toLowerCase()
+      item.NAME[language]
+        .toLowerCase()
         .split(" ")
         .join("")
         .includes(searchValue.toLowerCase().split(" ").join(""))
     );
     var dataForDescription = fullData.filter((item) =>
-      item.DESCRIPTION.toLowerCase()
+      item.DESCRIPTION[language]
+        .toLowerCase()
         .split(" ")
         .join("")
         .includes(searchValue.toLowerCase().split(" ").join(""))
@@ -82,25 +84,31 @@ const MenuList = ({
                         item.PIC == "true" ? "pics" : "categories"
                       }/${
                         item.PIC == "true"
-                          ? item.NAME.split(" ").join("_")
-                          : item.TYPE.split(" ").join("_")
+                          ? item.NAME[item.DEFAULT].split(" ").join("_")
+                          : item.TYPE[item.DEFAULT].split(" ").join("_")
                       }.jpg`}
                       alt={"image"}
                     />
                     <div className="menu__list--top--left">
                       <span className="menu__list--name">
-                        {item.NAME.split("").splice(0, 15).join("")}
-                        {item.NAME.length < 17 ? "" : "..."}
+                        {item.NAME[language].split("").splice(0, 15).join("")}
+                        {item.NAME[language].length < 17 ? "" : "..."}
                       </span>
                       <div className="menu__list--desc">
-                        {w < 330 || item.NAME.length > 16 ? (
+                        {w < 330 || item.NAME[language].length > 16 ? (
                           <p>
-                            {item.DESCRIPTION.split("").splice(0, 35).join("")}
+                            {item.DESCRIPTION[language]
+                              .split("")
+                              .splice(0, 35)
+                              .join("")}
                             ...
                           </p>
                         ) : (
                           <p>
-                            {item.DESCRIPTION.split("").splice(0, 50).join("")}
+                            {item.DESCRIPTION[language]
+                              .split("")
+                              .splice(0, 50)
+                              .join("")}
                             ...
                           </p>
                         )}
@@ -138,24 +146,34 @@ const MenuList = ({
                     item.PIC == "true" ? "pics" : "categories"
                   }/${
                     item.PIC == "true"
-                      ? item.NAME.split(" ").join("_") + ".jpg" || ".png"
-                      : item.TYPE.split(" ").join("_") + ".jpg" || ".png"
+                      ? item.NAME[item.DEFAULT].split(" ").join("_") + ".jpg" ||
+                        ".png"
+                      : item.TYPE[item.DEFAULT].split(" ").join("_") + ".jpg" ||
+                        ".png"
                   }`}
                   alt={"image"}
                 />
                 <div className="menu__list--top--left">
                   <span className="menu__list--name">
-                    {item.NAME.split("").splice(0, 15).join("")}
-                    {item.NAME.length < 17 ? "" : "..."}
+                    {item.NAME[language].split("").splice(0, 15).join("")}
+                    {item.NAME[language].length < 17 ? "" : "..."}
                   </span>
                   <div className="menu__list--desc">
-                    {w < 330 || item.NAME.length > 16 ? (
+                    {w < 330 || item.NAME[language].length > 16 ? (
                       <p>
-                        {item.DESCRIPTION.split("").splice(0, 35).join("")}...
+                        {item.DESCRIPTION[language]
+                          .split("")
+                          .splice(0, 35)
+                          .join("")}
+                        ...
                       </p>
                     ) : (
                       <p>
-                        {item.DESCRIPTION.split("").splice(0, 50).join("")}...
+                        {item.DESCRIPTION[language]
+                          .split("")
+                          .splice(0, 50)
+                          .join("")}
+                        ...
                       </p>
                     )}
                   </div>

@@ -1,8 +1,2 @@
-﻿CODE,CURRENCY,DURATION,PIC,PRICE,DESCRIPTION.AZE,DESCRIPTION.ENG,DESCRIPTION.TR,NAME.AZE,NAME.ENG,NAME.TR,TYPE.AZE,TYPE.ENG,TYPE.TR
-M-00001,TRY,15-30,false,12,"Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.","This is English description, it's for testing the application. Random text..","Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası.",TEQ ESPRESSO,SİNGLE ESPRESSO,TEK ESPRESSO,SICAQ KEHVE,HOT COFFEE,SICAK KAHVE
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
-,,,,,,,,,,,,,
+﻿CODE,CURRENCY,DURATION,PIC,PRICE,DESCRIPTION.AZE,DESCRIPTION.ENG,DESCRIPTION.TR,NAME.AZE,NAME.ENG,NAME.TR,TYPE.AZE,TYPE.ENG,TYPE.TR,DEFAULT
+M-00001,TRY,15-30,false,12,"Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.","This is English description, it's for testing the application. Random text..","Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası.",TEQ ESPRESSO,SİNGLE ESPRESSO,TEK ESPRESSO,SICAQ KEHVE,HOT COFFEE,SICAK KAHVE,TR

@@ -15,6 +15,7 @@ const Layout = ({
   cartData,
   menuList,
   menuTitles,
+  imageTitle,
   callMenuList,
   addToCart,
   title,
@@ -119,6 +120,7 @@ const Layout = ({
         clearSearchValue={() => setSearchValue("")}
         closeSearch={() => setIsSearchOpened(false)}
         language={language}
+        imageTitle={imageTitle}
       />
       <MenuList
         fullData={fullData}
@@ -142,6 +144,7 @@ const Layout = ({
         clearCart={() => clearCart()}
         setWarning={(prop) => setWarning(prop)}
         translateData={translateData}
+        language={language}
       />
       <MoreInfo
         closeInfo={() => closeInfo()}
@@ -150,6 +153,7 @@ const Layout = ({
         location={location}
         addToCart={(item, quantity) => addToCart(item, quantity)}
         translateData={translateData}
+        language={language}
       />
       <MoreInfoCart
         closeCartInfo={() => closeCartInfo()}
@@ -159,6 +163,7 @@ const Layout = ({
         addToCart={(item, quantity) => addToCart(item, quantity)}
         removeFromCart={(itemCode) => removeFromCart(itemCode)}
         translateData={translateData}
+        language={language}
       />
       <Popup
         setWarning={(prop) => setWarning(prop)}

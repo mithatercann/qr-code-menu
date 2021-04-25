@@ -10,9 +10,11 @@ function App({ languages }) {
   const location = useLocation();
   const [data, setData] = useState([]);
   const [menuTitle, setMenuTitle] = useState([]);
+  const [imageTitle, setImageTitle] = useState([]);
+
   const [title, setTitle] = useState("");
   const [currency, setCurrency] = useState("");
-  const [language, setLanguage] = useState(languages[0].language);
+  const [language, setLanguage] = useState("AZE");
   const [menuList, setMenuList] = useState([]);
   const [cart, setCart] = useState([]);
   const [info, setInfo] = useState([]);
@@ -21,7 +23,7 @@ function App({ languages }) {
   const [isCartInfoOpened, setIsCartInfoOpened] = useState(false);
   const [translateData, setTranslateData] = useState([]);
   const [styleForLayout, setStyleForLayout] = useState({});
-  const API = `./database${location.pathname}/${language}/db.json`;
+  const API = `./database${location.pathname}/db.json`;
   const TRANSLATE = `./translate/${language}.json`;
 
   const restaurantName = location.pathname
@@ -32,7 +34,9 @@ function App({ languages }) {
 
   const callMenuList = (titleProp) => {
     setTitle(titleProp);
-    const filterMenuList = data.filter((title) => title.TYPE == titleProp);
+    const filterMenuList = data.filter(
+      (title) => title.TYPE[language] == titleProp
+    );
     setMenuList(filterMenuList);
   };
 
@@ -81,30 +85,38 @@ function App({ languages }) {
 
   useEffect(() => {
     const titles = [];
+    const imageTitles = [];
+
     const fetchData = async () => {
       const response = await fetch(API);
       const responseData = await response.json();
       setData(responseData);
 
       // Filtering menu types
-      responseData.map((item) => titles.push(item.TYPE));
+      responseData.map((item) => titles.push(item.TYPE[language]));
       const filtered = titles.filter(
         (item, index, self) => self.indexOf(item) == index
       );
-      setMenuTitle(filtered);
 
-      const initialMenuList = responseData.filter(
-        (item) => item.TYPE == filtered[0]
+      responseData.map((item) => imageTitles.push(item.TYPE[item.DEFAULT]));
+      const filteredImageTitles = imageTitles.filter(
+        (item, index, self) => self.indexOf(item) == index
       );
 
-      setTitle(initialMenuList[0].TYPE);
+      const initialMenuList = responseData.filter(
+        (item) => item.TYPE[language] == filtered[0]
+      );
 
+      setTitle(initialMenuList[0].TYPE[language]);
+      setImageTitle(filteredImageTitles);
+      setMenuTitle(filtered);
       setCurrency(initialMenuList[0].CURRENCY);
       setMenuList(initialMenuList);
     };
 
     fetchData();
 
+    // FETCHING TRANSLATE DATA
     const fetchTranslate = async () => {
       fetch(TRANSLATE)
         .then((resp) => resp.json())
@@ -116,6 +128,7 @@ function App({ languages }) {
     fetchTranslate();
   }, [language]);
 
+  // FOR GETTIN CART ITEMS FROM LOCAL STORAGE
   useEffect(() => {
     if (cart) localStorage.setItem("cart", JSON.stringify(cart));
   }, [cart]);
@@ -154,6 +167,7 @@ function App({ languages }) {
           styleForLayout={styleForLayout}
           translateData={translateData}
           menuTitles={menuTitle}
+          imageTitle={imageTitle}
           menuList={menuList}
           data={data}
           callMenuList={(titleProp) => callMenuList(titleProp)}

@@ -6,19 +6,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
-      "AZE": "TEQ ESPRESSO",
-      "TR": "SİNGLE ESPRESSO"
+      "AZE": "AZERBAIJAN TEST",
+      "ENG": "SİNGLE ESPRESSO",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
-      "AZE": "SICAQ KEHVE",
+      "AZE": "SICAQ KOFE",
       "ENG": "HOT COFFEE",
       "TR": "SICAK KAHVE"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00002",
@@ -27,18 +29,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "DOUBLE ESPRESSO"
+      "ENG": "DOUBLE ESPRESSO",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "SICAQ KOFE",
       "ENG": "HOT COFFEE",
       "TR": "SICAK KAHVE"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00003",
@@ -47,18 +52,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "CORTADO"
+      "ENG": "CORTADO",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "SICAQ KOFE",
       "ENG": "HOT COFFEE",
       "TR": "SICAK KAHVE"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00004",
@@ -67,18 +75,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "ESPRESSO MACCHİATO"
+      "ENG": "ESPRESSO MACCHİATO",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "SICAQ KOFE",
       "ENG": "HOT COFFEE",
       "TR": "SICAK KAHVE"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00005",
@@ -87,18 +98,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "AMERİCANO"
+      "ENG": "AMERİCANO",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "SICAQ KOFE",
       "ENG": "HOT COFFEE",
       "TR": "SICAK KAHVE"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00006",
@@ -107,18 +121,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "ORTA AMERİCANO"
+      "ENG": "ORTA AMERİCANO",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "SICAQ KOFE",
       "ENG": "HOT COFFEE",
       "TR": "SICAK KAHVE"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00007",
@@ -127,18 +144,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "RED EYE"
+      "ENG": "RED EYE",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "SICAQ KOFE",
       "ENG": "HOT COFFEE",
       "TR": "SICAK KAHVE"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00008",
@@ -147,18 +167,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "FLAT WHİTE"
+      "ENG": "FLAT WHİTE",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "SICAQ KOFE",
       "ENG": "HOT COFFEE",
       "TR": "SICAK KAHVE"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00009",
@@ -167,18 +190,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "LATTE"
+      "ENG": "LATTE",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "SICAQ KOFE",
       "ENG": "HOT COFFEE",
       "TR": "SICAK KAHVE"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00010",
@@ -187,18 +213,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "MOCHA"
+      "ENG": "MOCHA",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "SICAQ KOFE",
       "ENG": "HOT COFFEE",
       "TR": "SICAK KAHVE"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00011",
@@ -207,18 +236,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "ROOİBOS CORTADO"
+      "ENG": "ROOİBOS CORTADO",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "SICAQ KOFE",
       "ENG": "HOT COFFEE",
       "TR": "SICAK KAHVE"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00012",
@@ -227,18 +259,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "SICAK ÇİKOLATA"
+      "ENG": "SICAK ÇİKOLATA",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "SICAQ KOFE",
       "ENG": "HOT COFFEE",
       "TR": "SICAK KAHVE"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00013",
@@ -247,18 +282,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "CHAİ TEA LATTE"
+      "ENG": "CHAİ TEA LATTE",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "SICAQ KOFE",
       "ENG": "HOT COFFEE",
       "TR": "SICAK KAHVE"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00014",
@@ -267,18 +305,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "İCED LATTE"
+      "ENG": "İCED LATTE",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "SOYUQ KOFE",
       "ENG": "COLD COFFEE",
       "TR": "SOĞUK KAHVELER"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00015",
@@ -287,18 +328,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "İCED AMERİCANO"
+      "ENG": "İCED AMERİCANO",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "SOYUQ KOFE",
       "ENG": "COLD COFFEE",
       "TR": "SOĞUK KAHVELER"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00016",
@@ -307,18 +351,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "İCED MOCHA"
+      "ENG": "İCED MOCHA",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "SOYUQ KOFE",
       "ENG": "COLD COFFEE",
       "TR": "SOĞUK KAHVELER"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00017",
@@ -327,18 +374,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "İCED CHAİ TEA LATTE"
+      "ENG": "İCED CHAİ TEA LATTE",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "SOYUQ KOFE",
       "ENG": "COLD COFFEE",
       "TR": "SOĞUK KAHVELER"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00018",
@@ -347,18 +397,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "JAPANESE CLOD DRİP"
+      "ENG": "JAPANESE CLOD DRİP",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "SOYUQ KOFE",
       "ENG": "COLD COFFEE",
       "TR": "SOĞUK KAHVELER"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00019",
@@ -367,18 +420,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "CLOD BREW"
+      "ENG": "CLOD BREW",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "SOYUQ KOFE",
       "ENG": "COLD COFFEE",
       "TR": "SOĞUK KAHVELER"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00020",
@@ -387,18 +443,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "AFFOGATO"
+      "ENG": "AFFOGATO",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "SOYUQ KOFE",
       "ENG": "COLD COFFEE",
       "TR": "SOĞUK KAHVELER"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00021",
@@ -407,18 +466,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "SHOT ESPRESSO"
+      "ENG": "SHOT ESPRESSO",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "EKSTRA",
       "ENG": "EXTRA",
       "TR": "EKSTRA"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00022",
@@ -427,18 +489,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "LAKTOZSUZ SÜT"
+      "ENG": "LAKTOZSUZ SÜT",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "EKSTRA",
       "ENG": "EXTRA",
       "TR": "EKSTRA"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00023",
@@ -447,18 +512,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "SOYA SÜT"
+      "ENG": "SOYA SÜT",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "EKSTRA",
       "ENG": "EXTRA",
       "TR": "EKSTRA"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00024",
@@ -467,18 +535,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "FİLTRE KAHVE"
+      "ENG": "FİLTRE KAHVE",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "DEMLEME KOFE",
       "ENG": "FILTRED",
       "TR": "DEMLEMELER"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00025",
@@ -487,18 +558,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "ORTA FİLTRE KAHVE"
+      "ENG": "ORTA FİLTRE KAHVE",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "DEMLEME KOFE",
       "ENG": "FILTRED",
       "TR": "DEMLEMELER"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00026",
@@ -507,18 +581,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "CHEMEX"
+      "ENG": "CHEMEX",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "DEMLEME KOFE",
       "ENG": "FILTRED",
       "TR": "DEMLEMELER"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00027",
@@ -527,18 +604,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "V60"
+      "ENG": "V60",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "DEMLEME KOFE",
       "ENG": "FILTRED",
       "TR": "DEMLEMELER"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00028",
@@ -547,18 +627,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "AEROPRESS"
+      "ENG": "AEROPRESS",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "DEMLEME KOFE",
       "ENG": "FILTRED",
       "TR": "DEMLEMELER"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00029",
@@ -567,18 +650,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "DELTER PRESS"
+      "ENG": "DELTER PRESS",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "DEMLEME KOFE",
       "ENG": "FILTRED",
       "TR": "DEMLEMELER"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00030",
@@ -587,18 +673,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "TÜRK KAHVESİ"
+      "ENG": "TÜRK KAHVESİ",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "DEMLEME KOFE",
       "ENG": "FILTRED",
       "TR": "DEMLEMELER"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00031",
@@ -607,18 +696,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "BİTKİ ÇAYI"
+      "ENG": "BİTKİ ÇAYI",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "DEMLEME KOFE",
       "ENG": "FILTRED",
       "TR": "DEMLEMELER"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00032",
@@ -627,18 +719,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "ÇAY"
+      "ENG": "ÇAY",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "DEMLEME KOFE",
       "ENG": "FILTRED",
       "TR": "DEMLEMELER"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00033",
@@ -647,18 +742,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "SOĞUK ÇAY"
+      "ENG": "SOĞUK ÇAY",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "SOYUQ ICKILER",
       "ENG": "COLD DRINKS",
       "TR": "SOĞUK İÇECEKLER"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00034",
@@ -667,18 +765,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "LİMONATA"
+      "ENG": "LİMONATA",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "SOYUQ ICKILER",
       "ENG": "COLD DRINKS",
       "TR": "SOĞUK İÇECEKLER"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00035",
@@ -687,18 +788,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "KAKAOLU MİLKSHAKE"
+      "ENG": "KAKAOLU MİLKSHAKE",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "SOYUQ ICKILER",
       "ENG": "COLD DRINKS",
       "TR": "SOĞUK İÇECEKLER"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00036",
@@ -707,18 +811,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "SADE MİLKSHAKE"
+      "ENG": "SADE MİLKSHAKE",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "SOYUQ ICKILER",
       "ENG": "COLD DRINKS",
       "TR": "SOĞUK İÇECEKLER"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00037",
@@ -727,18 +834,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "SU"
+      "ENG": "SU",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "SOYUQ ICKILER",
       "ENG": "COLD DRINKS",
       "TR": "SOĞUK İÇECEKLER"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00038",
@@ -747,18 +857,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "SODA"
+      "ENG": "SODA",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "SOYUQ ICKILER",
       "ENG": "COLD DRINKS",
       "TR": "SOĞUK İÇECEKLER"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00039",
@@ -767,18 +880,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "SAN PELLEGRİNO"
+      "ENG": "SAN PELLEGRİNO",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "SOYUQ ICKILER",
       "ENG": "COLD DRINKS",
       "TR": "SOĞUK İÇECEKLER"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00040",
@@ -787,18 +903,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "KOMBUCHA"
+      "ENG": "KOMBUCHA",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "SOYUQ ICKILER",
       "ENG": "COLD DRINKS",
       "TR": "SOĞUK İÇECEKLER"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00041",
@@ -807,18 +926,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "KRUVASAN"
+      "ENG": "KRUVASAN",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "SENDVICLER",
       "ENG": "SANDWICH",
       "TR": "SANDVİÇLER"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00042",
@@ -827,18 +949,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "HARİO CAM KARAF 02"
+      "ENG": "HARİO CAM KARAF 02",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "EKIPMANLAR",
       "ENG": "EQUIPMENTS",
       "TR": "EKİPMANLAR"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00043",
@@ -847,18 +972,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "HARİO SERAMİK DRİPPER 02"
+      "ENG": "HARİO SERAMİK DRİPPER 02",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "EKIPMANLAR",
       "ENG": "EQUIPMENTS",
       "TR": "EKİPMANLAR"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00044",
@@ -867,18 +995,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "DECANTER"
+      "ENG": "DECANTER",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "EKIPMANLAR",
       "ENG": "EQUIPMENTS",
       "TR": "EKİPMANLAR"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00045",
@@ -887,18 +1018,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "V60 HARİO FİLTRE 01"
+      "ENG": "V60 HARİO FİLTRE 01",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "EKIPMANLAR",
       "ENG": "EQUIPMENTS",
       "TR": "EKİPMANLAR"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00046",
@@ -907,18 +1041,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "V60 HARİO FİLTRE 02"
+      "ENG": "V60 HARİO FİLTRE 02",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "EKIPMANLAR",
       "ENG": "EQUIPMENTS",
       "TR": "EKİPMANLAR"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00047",
@@ -927,18 +1064,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "AEROPRESS"
+      "ENG": "AEROPRESS",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "EKIPMANLAR",
       "ENG": "EQUIPMENTS",
       "TR": "EKİPMANLAR"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00048",
@@ -947,18 +1087,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "TİMER"
+      "ENG": "TİMER",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "EKIPMANLAR",
       "ENG": "EQUIPMENTS",
       "TR": "EKİPMANLAR"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00049",
@@ -967,18 +1110,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "DELTER PRESS"
+      "ENG": "DELTER PRESS",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "EKIPMANLAR",
       "ENG": "EQUIPMENTS",
       "TR": "EKİPMANLAR"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00050",
@@ -987,18 +1133,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "TÜRK KAHVESİ CEZVESİ"
+      "ENG": "TÜRK KAHVESİ CEZVESİ",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "EKIPMANLAR",
       "ENG": "EQUIPMENTS",
       "TR": "EKİPMANLAR"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00051",
@@ -1007,18 +1156,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "TERMOMETRE"
+      "ENG": "TERMOMETRE",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "EKIPMANLAR",
       "ENG": "EQUIPMENTS",
       "TR": "EKİPMANLAR"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00052",
@@ -1027,18 +1179,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "DECANTER METAL FİLTRELİ"
+      "ENG": "DECANTER METAL FİLTRELİ",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "EKIPMANLAR",
       "ENG": "EQUIPMENTS",
       "TR": "EKİPMANLAR"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00053",
@@ -1047,18 +1202,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "CHEMEX FİLTRE KAĞIDI 3 CUP"
+      "ENG": "CHEMEX FİLTRE KAĞIDI 3 CUP",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "EKIPMANLAR",
       "ENG": "EQUIPMENTS",
       "TR": "EKİPMANLAR"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00054",
@@ -1067,18 +1225,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "CHEMEX FİLTRE KAĞIDI 6 CUP"
+      "ENG": "CHEMEX FİLTRE KAĞIDI 6 CUP",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "EKIPMANLAR",
       "ENG": "EQUIPMENTS",
       "TR": "EKİPMANLAR"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00055",
@@ -1087,18 +1248,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "HARİO KETTLE 1,2 L"
+      "ENG": "HARİO KETTLE 1,2 L",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "EKIPMANLAR",
       "ENG": "EQUIPMENTS",
       "TR": "EKİPMANLAR"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00056",
@@ -1107,18 +1271,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "MOTTA SİYAH 35 CL SÜT P"
+      "ENG": "MOTTA SİYAH 35 CL SÜT P",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "EKIPMANLAR",
       "ENG": "EQUIPMENTS",
       "TR": "EKİPMANLAR"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00057",
@@ -1127,18 +1294,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "MOTTA YEŞİL 50 CL SÜT P"
+      "ENG": "MOTTA YEŞİL 50 CL SÜT P",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "EKIPMANLAR",
       "ENG": "EQUIPMENTS",
       "TR": "EKİPMANLAR"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00058",
@@ -1147,18 +1317,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "MOTTA RED 35 CL SÜT P"
+      "ENG": "MOTTA RED 35 CL SÜT P",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "EKIPMANLAR",
       "ENG": "EQUIPMENTS",
       "TR": "EKİPMANLAR"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00059",
@@ -1167,18 +1340,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "GUATEMALA BUENA VİSTA 250 GR"
+      "ENG": "GUATEMALA BUENA VİSTA 250 GR",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "KOFELER",
       "ENG": "COFFEE",
       "TR": "KAHVELER"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00060",
@@ -1187,18 +1363,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "GUATEMALA FEMALE GROWERS 250 GR"
+      "ENG": "GUATEMALA FEMALE GROWERS 250 GR",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "KOFELER",
       "ENG": "COFFEE",
       "TR": "KAHVELER"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00061",
@@ -1207,18 +1386,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "PERU ELİ ESPİNZO NATURAL 250 GR"
+      "ENG": "PERU ELİ ESPİNZO NATURAL 250 GR",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "KOFELER",
       "ENG": "COFFEE",
       "TR": "KAHVELER"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00062",
@@ -1227,18 +1409,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "PERU CHİRİNOS 250 GR"
+      "ENG": "PERU CHİRİNOS 250 GR",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "KOFELER",
       "ENG": "COFFEE",
       "TR": "KAHVELER"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00063",
@@ -1247,18 +1432,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "KOSTA RİKA LAS LAJAS HONEY 250 GR"
+      "ENG": "KOSTA RİKA LAS LAJAS HONEY 250 GR",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "KOFELER",
       "ENG": "COFFEE",
       "TR": "KAHVELER"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00064",
@@ -1267,18 +1455,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "GUATEMALA BUENA VİSTA 100 GR"
+      "ENG": "GUATEMALA BUENA VİSTA 100 GR",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "KOFELER",
       "ENG": "COFFEE",
       "TR": "KAHVELER"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00065",
@@ -1287,18 +1478,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "GUATEMALA FEMALE GROWERS 100 GR"
+      "ENG": "GUATEMALA FEMALE GROWERS 100 GR",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "KOFELER",
       "ENG": "COFFEE",
       "TR": "KAHVELER"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00066",
@@ -1307,18 +1501,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "PERU ELİ ESPİNZO NATURAL 100 GR"
+      "ENG": "PERU ELİ ESPİNZO NATURAL 100 GR",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "KOFELER",
       "ENG": "COFFEE",
       "TR": "KAHVELER"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00067",
@@ -1327,18 +1524,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "PERU CHİRİNOS 100 GR"
+      "ENG": "PERU CHİRİNOS 100 GR",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "KOFELER",
       "ENG": "COFFEE",
       "TR": "KAHVELER"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00068",
@@ -1347,18 +1547,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "KOSTA RİKA LAS LAJAS HONEY 100 GR"
+      "ENG": "KOSTA RİKA LAS LAJAS HONEY 100 GR",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "KOFELER",
       "ENG": "COFFEE",
       "TR": "KAHVELER"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00069",
@@ -1367,18 +1570,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "PERU HUABAL TÜRK 250 GR"
+      "ENG": "PERU HUABAL TÜRK 250 GR",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "KOFELER",
       "ENG": "COFFEE",
       "TR": "KAHVELER"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00070",
@@ -1387,18 +1593,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "HONDURAS GUALME KAFEİNSİZ 250 GR"
+      "ENG": "HONDURAS GUALME KAFEİNSİZ 250 GR",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "KOFELER",
       "ENG": "COFFEE",
       "TR": "KAHVELER"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00071",
@@ -1407,18 +1616,21 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "PERU HUABAL TÜRK 100 GR"
+      "ENG": "PERU HUABAL TÜRK 100 GR",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "KOFELER",
       "ENG": "COFFEE",
       "TR": "KAHVELER"
-    }
+    },
+    "DEFAULT": "TR"
   },
   {
     "CODE": "M-00072",
@@ -1427,17 +1639,20 @@
     "PIC": false,
     "PRICE": 12,
     "DESCRIPTION": {
-      "AZE": "Azerbaijan dilinde acixlama , denemek icin xazirlanmistir.",
-      "ENG": "This is English description, it's for testing the application. Random text..",
-      "TR": "Bu Türkçe açıklama , denemek için rastgele yazılardan oluşan bir text oluşturuldu.Anlamsız olması olası."
+      "AZE": "Bu tətbiq dili dəyişikliklərini test etmək üçün təsadüfi bir mətndir",
+      "ENG": "This is a random text for testing application language changes",
+      "TR": "Bu, uygulama dili değişikliklerini test etmek için rastgele bir metindir"
     },
     "NAME": {
       "AZE": "AZERBAIJAN TEST",
-      "TR": "HONDURAS GUALME KAFEİNSİZ 100 GR"
+      "ENG": "HONDURAS GUALME KAFEİNSİZ 100 GR",
+      "TR": "TURKCE TEST"
     },
     "TYPE": {
+      "AZE": "KOFELER",
       "ENG": "COFFEE",
       "TR": "KAHVELER"
-    }
+    },
+    "DEFAULT": "TR"
   }
 ]

@@ -8,6 +8,7 @@ function MoreInfo({
   location,
   addToCart,
   translateData,
+  language,
 }) {
   const [scrolled, setScrolled] = useState(0);
   const [transition, setTransition] = useState(0);
@@ -77,8 +78,8 @@ function MoreInfo({
                     item.PIC == "true" ? "pics" : "categories"
                   }/${
                     item.PIC == "true"
-                      ? item.NAME.split(" ").join("_")
-                      : item.TYPE.split(" ").join("_")
+                      ? item.NAME["TR"].split(" ").join("_")
+                      : item.TYPE["TR"].split(" ").join("_")
                   }.jpg')`,
                 }}
                 className="info__img"
@@ -86,8 +87,8 @@ function MoreInfo({
               <div className="info__inner">
                 <div className="info__top">
                   <div className="info__details">
-                    <span>{item.NAME}</span>
-                    <p>{item.DESCRIPTION}</p>
+                    <span>{item.NAME[language]}</span>
+                    <p>{item.DESCRIPTION[language]}</p>
                   </div>
                 </div>
 

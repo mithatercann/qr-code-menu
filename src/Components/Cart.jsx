@@ -16,6 +16,7 @@ function Cart({
   clearCart,
   setWarning,
   translateData,
+  language,
 }) {
   const [cartLength, setCartLength] = useState();
   const w = window.innerWidth;
@@ -66,24 +67,32 @@ function Cart({
                     item.PIC == "true" ? "pics" : "categories"
                   }/${
                     item.PIC == "true"
-                      ? item.NAME.split(" ").join("_")
-                      : item.TYPE.split(" ").join("_")
+                      ? item.NAME["TR"].split(" ").join("_")
+                      : item.TYPE["TR"].split(" ").join("_")
                   }.jpg`}
                   alt={"image"}
                 />
                 <div className="cart__item--details">
                   <span>
                     {" "}
-                    {item.NAME.split("").splice(0, 15).join("")}
-                    {item.NAME.length < 17 ? "" : "..."}
+                    {item.NAME[language].split("").splice(0, 15).join("")}
+                    {item.NAME[language].length < 17 ? "" : "..."}
                   </span>
                   {w < 331 ? (
                     <p>
-                      {item.DESCRIPTION.split("").splice(0, 35).join("")}...
+                      {item.DESCRIPTION[language]
+                        .split("")
+                        .splice(0, 35)
+                        .join("")}
+                      ...
                     </p>
                   ) : (
                     <p>
-                      {item.DESCRIPTION.split("").splice(0, 60).join("")}...
+                      {item.DESCRIPTION[language]
+                        .split("")
+                        .splice(0, 60)
+                        .join("")}
+                      ...
                     </p>
                   )}
                   <div className="cart__item--price">
