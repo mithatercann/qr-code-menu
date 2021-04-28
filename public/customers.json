@@ -6,11 +6,10 @@
             "language":"ENG"
          },
          {
-            "language":"AZE"
-         },
-         {
             "language":"TR"
          }
-      ]
+      ],
+      "restaurantName" : "Du café bio",
+      "description" : "The coffee beans come to us, grown by such expert hands, true masters of the soil with the experience of generations."
    }
 ]

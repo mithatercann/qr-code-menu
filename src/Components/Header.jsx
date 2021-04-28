@@ -74,7 +74,9 @@ function Header({
       </div>
       <span
         onClick={() => {
-          openCart();
+          if (cartData.length !== 0) {
+            openCart();
+          }
         }}
         className="header__cart"
       >

@@ -110,6 +110,7 @@ function App({ languages }) {
       setTitle(initialMenuList[0].TYPE[language]);
       setImageTitle(filteredImageTitles);
       setMenuTitle(filtered);
+
       setCurrency(initialMenuList[0].CURRENCY);
       setMenuList(initialMenuList);
     };
