@@ -81,8 +81,8 @@ function MoreInfoCart({
                     item.PIC == "true" ? "pics" : "categories"
                   }/${
                     item.PIC == "true"
-                      ? item.NAME["TR"].split(" ").join("_")
-                      : item.TYPE["TR"].split(" ").join("_")
+                      ? item.NAME[item.DEFAULT].split(" ").join("_")
+                      : item.TYPE[item.DEFAULT].split(" ").join("_")
                   }.jpg')`,
                 }}
                 className="info__img"
